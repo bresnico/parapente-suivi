@@ -12,4 +12,24 @@ page-layout: full
 title-block-banner: true
 ---
 
+<div>
+<h3>
+Bon ben nous sommes le<script>
+date = new Date().toLocaleDateString();
+document.write(date);
+</script>
+ et ça fait <script>
+let date_1 = new Date();
+let date_2 = new Date(2022, 09, 20);
 
+const days = (date_1, date_2) =>{
+    let difference = date_1.getTime() - date_2.getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;
+}
+document.write(days(date_1, date_2));
+</script> jour(s) que je n'ai pas volé.
+</h3>
+</div>
+
+Voici les publications.
