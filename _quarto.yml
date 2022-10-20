@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "parapente-suivi"
+  title: "Mon carnet de parapente"
   site-url: "https://parapente.nicolasbressoud.ch"
   navbar:
     right:
