@@ -1,0 +1,74 @@
+---
+title: "Mon premier vol de 2022 !!"
+author: "Nicolas Bressoud"
+date: "18 oct. 2022"
+vols: "1"
+emotion: "joie"
+intense: "beaucoup"
+hike: FALSE
+walk: "na"
+categories: [hook5p]
+image: 'image.jpg'
+
+---
+
+```{r}
+#| echo: false
+#| warning: false
+  
+library(here)
+library(tidyverse)
+library(rmarkdown)
+
+date_vol <- metadata$date
+n_vols <- metadata$vols
+```
+
+## Infos sur la journée
+
+```{r}
+#| echo: false
+#| warning: false
+
+d <- readRDS(here("data","data.rds"))
+
+
+d_post <- d |> 
+  filter(Date == date_vol) |> 
+  select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+
+```
+
+C'était le `r rmarkdown::metadata$date`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+
+## Image de la journée
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+```
+
+## Hike and Fly
+
+```{r}
+#| echo: false
+#| warning: false
+
+if (metadata$hike == TRUE) {
+  walk <- metadata$walk
+  hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ ", walk, ".")
+  pic <- knitr::include_graphics(path= here("img", paste0(date_vol,"_walk",".jpeg")))
+} else {
+  hike <- "je n'ai pas fait de hike'n fly."
+  pic <- ""
+}
+
+```
+
+`r hike`
+
+`r pic`
