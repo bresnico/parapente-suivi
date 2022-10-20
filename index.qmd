@@ -14,21 +14,18 @@ title-block-banner: true
 
 <div>
 <h3>
-Bon ben nous sommes le<script>
-date = new Date().toLocaleDateString();
-document.write(date);
-</script>
- et ça fait <script>
-let date_1 = new Date();
-let date_2 = new Date(2022, 09, 20);
+<script>
+let date_a = new Date();
+let date_b = new Date(2022, 09, 19);
 
-const days = (date_1, date_2) =>{
-    let difference = date_1.getTime() - date_2.getTime();
+const days = (date_a, date_b) =>{
+    let difference = date_a.getTime() - date_b.getTime();
     let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-    return TotalDays;
+    let TotalDaysRevised = Math.ceil(TotalDays -1);
+    return TotalDaysRevised;
 }
-document.write(days(date_1, date_2));
-</script> jour(s) que je n'ai pas volé.
+document.write("Bon ben nous sommes le " + date_a.toLocaleDateString() + " et j'ai volé pour la dernière fois le " + date_b.toLocaleDateString() + ". Cela fait donc " + days(date_a, date_b) + " jour(s) sans parapente !");
+</script>
 </h3>
 </div>
 
