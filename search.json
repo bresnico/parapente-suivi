@@ -44,15 +44,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Mon carnet de parapente",
+    "title": "Mon carnet de vol",
     "section": "",
-    "text": "hook5p\n\n\n\n\n\n\n\n\n\n\n\nOct 19, 2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nhook5p\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\nNo matching items"
+    "text": "hook5p\n\n\n\n\n\n\n\n\n\n\n\n19/10/2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nhook5p\n\n\n\n\n\n\n\n\n\n\n\n18/10/2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\nAucun article correspondant"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "A propos",
     "section": "",
-    "text": "About this blog"
+    "text": "Ce blog constitue mon carnet de vol personnel.\nJe m’y amuse également pour tester des moyens de publier des contenus via ce système absolument incroyable qu’est Quarto.\nBonne visite."
   }
 ]
