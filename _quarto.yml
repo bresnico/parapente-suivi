@@ -1,16 +1,20 @@
+lang: fr
+
 project:
   type: website
 
 website:
-  title: "Mon carnet de parapente"
+  title: "Niviuk Naktuk"
   site-url: "https://parapente.nicolasbressoud.ch"
+  favicon: "img/favicon.ico"
   navbar:
     right:
-      - about.qmd
+      - href: about.qmd
+        text: "A propos"
       - icon: github
-        href: https://github.com/
+        href: https://github.com/bresnico
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/NBressoud
 format:
   html:
     theme: cosmo

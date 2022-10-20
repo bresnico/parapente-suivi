@@ -1,19 +1,26 @@
 ---
-title: "About"
+title: "A propos"
 image: profile.jpg
 about:
   template: jolla
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/NBressoud
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://ch.linkedin.com/in/nicolas-bressoud-1b33828a
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/bresnico
 
 ---
 
-About this blog
+
+Je suis Nicolas Bressoud, un passionné très occasionnel de parapente. Un plouf fait mon bonheur.
+
+Ce blog constitue mon carnet de vol personnel.
+
+Je m'y amuse également pour tester des moyens de publier des contenus via ce système absolument incroyable qu'est [Quarto](https://quarto.org).
+
+Bonne visite.
