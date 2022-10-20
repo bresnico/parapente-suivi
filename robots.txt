@@ -1,1 +1,1 @@
-Sitemap: https://nicolasbressoud.ch/sitemap.xml
+Sitemap: https://bresnico.github.io/parapente-suivi/sitemap.xml
