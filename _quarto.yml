@@ -3,7 +3,6 @@ project:
 
 website:
   title: "parapente-suivi"
-  site-url: "https://nicolasbressoud.ch"
   navbar:
     right:
       - about.qmd

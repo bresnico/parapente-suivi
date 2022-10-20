@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "parapente-suivi",
-    "section": "",
-    "text": "hook5p\n\n\n\n\n\n\n\n\n\n\n\nOct 19, 2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nhook5p\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/2022-10-19/2022-10-19.html",
-    "href": "posts/2022-10-19/2022-10-19.html",
-    "title": "Une seconde en 2022",
-    "section": "",
-    "text": "C’était le 19 oct. 2022. Je suis parti de la région de Valerette à 16:36:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:15:00. J’ai volé 1 fois dans la journée. J’ai ressenti par mal de joie.\nVoici un tracé sélectionné de la journée :\n\nknitr::include_graphics(path = here(\"img\", paste0(date_vol,\".jpeg\")))\n\n\n\n\n\n\n\n\n\nJ’ai pu faire un peu de hike’n fly. J’ai marché environ 1h10."
-  },
-  {
     "objectID": "posts/2022-10-19/2022-10-19.html#infos-sur-la-journée",
     "href": "posts/2022-10-19/2022-10-19.html#infos-sur-la-journée",
     "title": "Un deuxième vol en deux jours d’affilée !",
@@ -75,5 +40,19 @@
     "title": "Mon premier vol de 2022 !!",
     "section": "Hike and Fly",
     "text": "Hike and Fly\n\n\n\nje n’ai pas fait de hike’n fly."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "parapente-suivi",
+    "section": "",
+    "text": "hook5p\n\n\n\n\n\n\n\n\n\n\n\nOct 19, 2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nhook5p\n\n\n\n\n\n\n\n\n\n\n\nOct 18, 2022\n\n\nNicolas Bressoud\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
   }
 ]
