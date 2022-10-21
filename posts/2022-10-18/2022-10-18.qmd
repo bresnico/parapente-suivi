@@ -49,7 +49,7 @@ Voici un tracé sélectionné de la journée :
 #| echo: false
 #| warning: false
 
-knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+knitr::include_graphics(path = here::here("img", paste0(date_vol,".jpeg")))
 ```
 
 ## Hike and Fly

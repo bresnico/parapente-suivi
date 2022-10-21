@@ -1,5 +1,5 @@
 {
-  "hash": "6d5ac42ecc7b2cbf4bdf195c01ac91e9",
+  "hash": "c5b1c61651de9aa3365a9d39190c799b",
   "result": {
     "markdown": "---\ntitle: \"Mon premier vol de 2022 !!\"\nauthor: \"Nicolas Bressoud\"\ndate: \"18 oct. 2022\"\nvols: \"1\"\nemotion: \"joie\"\nintense: \"beaucoup\"\nhike: FALSE\nwalk: \"na\"\ncategories: [hook5p]\nimage: 'image.jpg'\n\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 18 oct. 2022. Je suis parti de la région de Valerette à 17:40:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:14:00. J'ai volé 1 fois dans la journée. J'ai ressenti beaucoup de joie.\n\n## Image de la journée\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/18 oct. 2022.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n",
     "supporting": [],
