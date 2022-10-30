@@ -1,0 +1,14 @@
+{
+  "hash": "111e52f6a4ca2ed4d25f98d6bd1d160f",
+  "result": {
+    "markdown": "---\ntitle: \"Un grand vol depuis Bellevue en plein été indien\"\nauthor: \"Nicolas Bressoud\"\ndate: \"30 oct. 2022\"\nvols: \"1\"\nemotion: \"joie\"\nintense: \"énormément\"\nhike: TRUE\nwalk: \"50 min\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 30 oct. 2022. Je suis parti de la région de Pointe de Bellevue-2030 à 10:53:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:22:00. J'ai volé 1 fois dans la journée. J'ai ressenti énormément de joie.\n\nOn est partis le samedi matin de Vionnaz. Direction le train puis le bus à Collombey pour Morgins. A pied jusqu'à Chanso où nous avons passé la nuit.\n\nJ'ai pu tester les accélérateurs et me rappeler les règles de priorité en vol. Tip top !\n\n## Image de la journée\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/30 oct. 2022.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ 50 min.\n\n::: {.cell-output-display}\n![](../../img/30 oct. 2022_walk.jpeg)\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
