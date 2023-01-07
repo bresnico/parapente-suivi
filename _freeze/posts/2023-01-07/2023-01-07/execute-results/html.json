@@ -1,0 +1,14 @@
+{
+  "hash": "76ea200792773608292df91bd4ac3521",
+  "result": {
+    "markdown": "---\ntitle: \"Depuis la maison : il était temps !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"7 janv. 2023\"\nvols: \"1\"\nemotion: \"satisfaction\"\nintense: \"beaucoup\"\nhike: TRUE\nwalk: \"75 min\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 7 janv. 2023. Je suis parti de la région de Les Cerniers à 11:34:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:11:00. J'ai volé 1 fois dans la journée. J'ai ressenti beaucoup de satisfaction.\n\nJ'ai pu tenter de téléphoner en vol avec les airpods tout en gardant le GPS. Ca a très bien fonctionné.\n\nJe dois apprendre à plier ma voile.\n\n## Image de la journée\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/7 janv. 2023.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ 75 min.\n\n::: {.cell-output-display}\n![](../../img/7 janv. 2023_walk.jpeg)\n:::\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
