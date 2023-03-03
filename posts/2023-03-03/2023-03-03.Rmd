@@ -46,7 +46,7 @@ On a traversé des petits nuages qui s'accrochaient à Torgon virage. Top.
 
 Je dois toujours apprendre à plier ma voile.
 
-## Image de la journée
+## Images de la journée
 
 Voici un tracé sélectionné de la journée : 
 
@@ -56,6 +56,20 @@ Voici un tracé sélectionné de la journée :
 
 knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
 ```
+
+Et quelques photos de vol prises par Sam (sauf celle de ma voile en vol) : 
+
+```{r echo=FALSE}
+
+knitr::include_graphics(path = here("img", "3 mars 2023", "030323- - 1.jpeg"))
+knitr::include_graphics(path = here("img", "3 mars 2023", "030323- - 2.jpeg"))
+knitr::include_graphics(path = here("img", "3 mars 2023", "030323- - 3.jpeg"))
+knitr::include_graphics(path = here("img", "3 mars 2023", "030323- - 4.jpeg"))
+knitr::include_graphics(path = here("img", "3 mars 2023", "030323- - 5.jpeg"))
+knitr::include_graphics(path = here("img", "3 mars 2023", "030323- - 6.jpeg"))
+
+```
+
 
 ## Hike and Fly
 
