@@ -1,0 +1,110 @@
+---
+title: "Réapprendre à décoller !"
+author: "Nicolas Bressoud"
+date: "5 mars 2023"
+vols: "1"
+emotion: "curiosité"
+intense: "pas mal"
+hike: FALSE
+walk: ""
+categories: [hook5p]
+image: 'image.jpg'
+---
+
+```{r}
+#| echo: false
+#| warning: false
+  
+library(here)
+library(tidyverse)
+library(rmarkdown)
+
+date_vol <- metadata$date
+n_vols <- metadata$vols
+```
+
+## Infos sur la journée
+
+```{r}
+#| echo: false
+#| warning: false
+
+d <- readRDS(here("data","data.rds"))
+
+
+d_post <- d |> 
+  filter(Date == date_vol) |> 
+  select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+
+```
+
+C'était le `r rmarkdown::metadata$date`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+
+On était avec Sam et Jean-Da. Les familles étaient sur place pour assister à l'aterrissage. C'est très sympa de se retrouver tous ensemble.
+
+On a traversé des petits nuages qui s'accrochaient à Torgon virage.
+
+Il y a eu un problème à mon décollage.
+Je pense que j'ai perdu un geste automatisé dans le décollage face à la voile.
+En effet, lorsque la voile était en haut, je me suis retrouvé en train de commencer à me retourner sans avoir mes freins dans chaque main.
+En même temps, j'ai décollé.
+Concrètement j'étais toujours face a la voile, en l'air, avec un twist et un seul frein en main.
+
+Au final, comme le vent portait bien, il n'y a pas eu de problème sur la trajectoire et pas d'accident.
+
+Ceci m'amène quand même à me demander comment est-ce que je faisais avant.
+Je crois bien que la clé c'est la prise en main des freins dans la main gauche où j'ai fait une erreur.
+Le frein de la main droite doit passer par-dessus l'élévateur de la main gauche.
+Je dois avoir mes freins dans chaque main au contrôle visuel de la voile, avant de me retourner.
+
+Je dois tester ça au gonflage.
+Dans des exercices.
+
+Je dois toujours apprendre à plier ma voile.
+
+## Images de la journée
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+```
+
+Et quelques photos prises par Laure : 
+
+```{r echo=FALSE}
+
+print("à venir")
+# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 1.jpeg"))
+# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 2.jpeg"))
+# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 3.jpeg"))
+# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 4.jpeg"))
+# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 5.jpeg"))
+# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 6.jpeg"))
+
+```
+
+
+## Hike and Fly
+
+```{r}
+#| echo: false
+#| warning: false
+
+if (metadata$hike == TRUE) {
+  walk <- metadata$walk
+  hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ ", walk, ".")
+  pic <- knitr::include_graphics(path= here("img", paste0(date_vol,"_walk",".jpeg")))
+} else {
+  hike <- "je n'ai pas fait de hike'n fly."
+  pic <- ""
+}
+
+```
+
+`r hike`
+
+`r pic`
