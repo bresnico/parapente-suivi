@@ -40,7 +40,7 @@ d_post <- d |>
 
 C'était le `r rmarkdown::metadata$date`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
 
-On était avec Sam et Jean-Da. Les familles étaient sur place pour assister à l'aterrissage. C'est très sympa de se retrouver tous ensemble.
+On était avec Sam et Jean-Da. Les familles étaient sur place pour assister à l'atterrissage. C'est très sympa de se retrouver tous ensemble.
 
 On a traversé des petits nuages qui s'accrochaient à Torgon virage.
 
