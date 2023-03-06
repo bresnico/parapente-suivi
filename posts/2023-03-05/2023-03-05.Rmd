@@ -48,12 +48,12 @@ Il y a eu un problème à mon décollage.
 Je pense que j'ai perdu un geste automatisé dans le décollage face à la voile.
 En effet, lorsque la voile était en haut, je me suis retrouvé en train de commencer à me retourner sans avoir mes freins dans chaque main.
 En même temps, j'ai décollé.
-Concrètement j'étais toujours face a la voile, en l'air, avec un twist et un seul frein en main.
+Concrètement j'étais toujours face à la voile, en l'air, avec un twist et un seul frein en main.
 
 Au final, comme le vent portait bien, il n'y a pas eu de problème sur la trajectoire et pas d'accident.
 
 Ceci m'amène quand même à me demander comment est-ce que je faisais avant.
-Je crois bien que la clé c'est la prise en main des freins dans la main gauche où j'ai fait une erreur.
+Je crois bien que la clé c'est la prise en main des freins dans la main gauche : c'est là que j'ai fait une erreur.
 Le frein de la main droite doit passer par-dessus l'élévateur de la main gauche.
 Je dois avoir mes freins dans chaque main au contrôle visuel de la voile, avant de me retourner.
 
@@ -77,13 +77,8 @@ Et quelques photos prises par Laure :
 
 ```{r echo=FALSE}
 
-print("à venir")
-# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 1.jpeg"))
-# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 2.jpeg"))
-# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 3.jpeg"))
-# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 4.jpeg"))
-# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 5.jpeg"))
-# knitr::include_graphics(path = here("img", "5 mars 2023", "030323- - 6.jpeg"))
+knitr::include_graphics(path = here("img", "5 mars 2023", "5 mars 2023 - 1.jpeg"))
+knitr::include_graphics(path = here("img", "5 mars 2023", "5 mars 2023 - 2.jpeg"))
 
 ```
 
