@@ -1,0 +1,106 @@
+---
+title: "Mise en confiance avec les cours SIV"
+author: "Nicolas Bressoud"
+date: "06/07/2023"
+date_vol: "2023-07-06"
+vols: "1"
+emotion: "confiance"
+intense: "suffisamment"
+hike: FALSE
+walk: ""
+categories: [hook5p]
+image: 'image.jpg'
+---
+
+```{r}
+#| echo: false
+#| warning: false
+  
+library(here)
+library(tidyverse)
+library(rmarkdown)
+
+date_day <- metadata$date_vol
+n_vols <- metadata$vols
+```
+
+## Infos sur la journée
+
+```{r}
+#| echo: false
+#| warning: false
+
+d <- readRDS(here("data","data.rds"))
+
+d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
+
+d$date_vol <- as.Date(d$date_vol)
+
+# Sauvegardez la locale actuelle
+old_locale <- Sys.getlocale("LC_TIME")
+
+# Définissez la locale en français
+Sys.setlocale("LC_TIME", "fr_FR.UTF-8")
+
+# Formatez les dates avec strftime()
+d$date_vol <- strftime(d$date_vol, "%e %B %Y")
+
+# Restaurez la locale précédente
+Sys.setlocale("LC_TIME", old_locale)
+
+# Enlever l'éventuel espace au début
+d$date_vol <- trimws(d$date_vol, which = "left")
+
+d_post <- d |> 
+  filter(Date == date_day) |> 
+  select(date_vol,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+
+```
+
+C'était le `r rmarkdown::metadata$date_vol`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+
+On était avec Sam. C'était fondamental pour moi de décoller proprement avec une maîtrise du "face à la voile". Je voulais m'assurer que j'avais bien compris mon erreur passée. Et ça a été le cas. Cool !
+
+Pour le faire court :
+
+- Je prends mes freins dos à la voile
+- Je me retourne
+- Je prends les A avec la main droite
+- Mes freins restent dans leur main.
+
+Je dois toujours apprendre à plier ma voile. Eh oui.
+
+Sinon, pour un premier vol depuis bien longtemps, je me suis senti à l'aise et je me suis bien amusé au-dessus du déco (**26 m** au-dessus du déco et une montée max de **2.9 m/s**). J'ai tenté de laisser la voile faire des abattées et tout s'est passé comme attendu. Très bonnes sensations et grosse confiance sous la voile.
+
+## Images de la journée
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+```
+
+
+## Hike and Fly
+
+```{r}
+#| echo: false
+#| warning: false
+
+if (metadata$hike == TRUE) {
+  walk <- metadata$walk
+  hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ ", walk, ".")
+  pic <- knitr::include_graphics(path= here("img", paste0(date_vol,"_walk",".jpeg")))
+} else {
+  hike <- "je n'ai pas fait de hike'n fly."
+  pic <- ""
+}
+
+```
+
+`r hike`
+
+`r pic`
