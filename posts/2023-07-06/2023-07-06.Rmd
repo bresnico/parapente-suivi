@@ -1,8 +1,7 @@
 ---
 title: "Mise en confiance avec les cours SIV"
 author: "Nicolas Bressoud"
-date: "06/07/2023"
-date_vol: "2023-07-06"
+date: "6 juil. 2023"
 vols: "1"
 emotion: "confiance"
 intense: "suffisamment"
@@ -20,7 +19,7 @@ library(here)
 library(tidyverse)
 library(rmarkdown)
 
-date_day <- metadata$date_vol
+date_vol <- metadata$date
 n_vols <- metadata$vols
 ```
 
@@ -32,32 +31,26 @@ n_vols <- metadata$vols
 
 d <- readRDS(here("data","data.rds"))
 
-d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
+# d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
 
-d$date_vol <- as.Date(d$date_vol)
-
-# Sauvegardez la locale actuelle
-old_locale <- Sys.getlocale("LC_TIME")
-
-# Définissez la locale en français
-Sys.setlocale("LC_TIME", "fr_FR.UTF-8")
+# d$date_vol <- as.Date(d$date_vol)
 
 # Formatez les dates avec strftime()
-d$date_vol <- strftime(d$date_vol, "%e %B %Y")
+# d$date_vol <- strftime(d$date_vol, "%e %B %Y")
 
 # Restaurez la locale précédente
-Sys.setlocale("LC_TIME", old_locale)
+# Sys.setlocale("LC_TIME", old_locale)
 
 # Enlever l'éventuel espace au début
-d$date_vol <- trimws(d$date_vol, which = "left")
+# d$date_vol <- trimws(d$date_vol, which = "left")
 
 d_post <- d |> 
-  filter(Date == date_day) |> 
-  select(date_vol,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+  filter(Date == date_vol) |> 
+  select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
 
 ```
 
-C'était le `r rmarkdown::metadata$date_vol`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+C'était le `r rmarkdown::metadata$date`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
 
 On était avec Sam. C'était fondamental pour moi de décoller proprement avec une maîtrise du "face à la voile". Je voulais m'assurer que j'avais bien compris mon erreur passée. Et ça a été le cas. Cool !
 
