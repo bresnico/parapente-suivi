@@ -1,0 +1,14 @@
+{
+  "hash": "b6be7b34c987a2873e5d7bb166dac353",
+  "result": {
+    "markdown": "---\ntitle: \"Premier jour SIV\"\nauthor: \"Nicolas Bressoud\"\ndate: \"07/07/2023\"\nvols: \"3\"\nemotion: \"confiance\"\nintense: \"un peu\"\nhike: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n\n## Infos sur la journée\n\nC'était le jour 1 sur 2 pour notre SIV avec sam ! Ce vendredi 7 juillet 2023, on a fait 3 vols.\n\nEn résumé, je ne pensais pas aller aussi loin :\n\n- frontale\n- frontale asymétrique\n- 360 avec sortie dissipée\n- tangages\n- roulis\n- vitese min.\n- ...\n\nJe me suis senti en confiance dans les décos et atterros.\n\nA noter : \n\n- un atterrissage assez limite où je suis arrivé à la limite entre les arbres. Décision discutable mais j'avais ma décision bien en tête.\n- 2 décos normaux et 1 face à la voile sans soucis.\n- Peurs en vol aux exercices avec une voile qui réagit très bien à la position de mon corps. J'attends mes limites aux 360. C'est pas énorme en vidéo mais en vol, j'en ai assez.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

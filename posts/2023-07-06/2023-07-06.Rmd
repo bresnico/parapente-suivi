@@ -1,7 +1,7 @@
 ---
 title: "Mise en confiance avec les cours SIV"
 author: "Nicolas Bressoud"
-date: "6 juil. 2023"
+date: "07/06/2023"
 vols: "1"
 emotion: "confiance"
 intense: "suffisamment"
@@ -19,7 +19,7 @@ library(here)
 library(tidyverse)
 library(rmarkdown)
 
-date_vol <- metadata$date
+date_vol <- "6 juil. 2023"
 n_vols <- metadata$vols
 ```
 
@@ -45,7 +45,7 @@ d <- readRDS(here("data","data.rds"))
 # d$date_vol <- trimws(d$date_vol, which = "left")
 
 d_post <- d |> 
-  filter(Date == date_vol) |> 
+  filter(Date == "6 juil. 2023") |> 
   select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
 
 ```
