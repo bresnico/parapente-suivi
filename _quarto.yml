@@ -1,5 +1,7 @@
 lang: fr
 
+resources: CNAME
+
 project:
   type: website
 
