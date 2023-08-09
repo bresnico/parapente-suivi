@@ -1,0 +1,14 @@
+{
+  "hash": "b46582e67d7053bd4f9073dd9156a235",
+  "result": {
+    "markdown": "---\ntitle: \"Vol du matin à Torgon\"\nauthor: \"Nicolas Bressoud\"\ndate: \"08/09/2023\"\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: FALSE\nwalk: \"3h30\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 9 août 2023. Je suis parti de la région de Vionnaz Turn à 09:53:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:07:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\n\n## Images de la journée\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/9 août 2023.jpeg)\n:::\n:::\n\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
