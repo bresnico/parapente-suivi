@@ -1,7 +1,7 @@
 ---
 title: "Vol du matin à Torgon"
 author: "Nicolas Bressoud"
-date: "08/09/2023"
+date: "2023-08-09"
 vols: "1"
 emotion: "plaisir"
 intense: "bien"
@@ -19,7 +19,7 @@ library(here)
 library(tidyverse)
 library(rmarkdown)
 
-date_vol <- "9 août 2023"
+date_vol <- metadata$date
 n_vols <- metadata$vols
 ```
 
@@ -45,12 +45,12 @@ d <- readRDS(here("data","data.rds"))
 # d$date_vol <- trimws(d$date_vol, which = "left")
 
 d_post <- d |> 
-  filter(Date == "9 août 2023") |> 
+  filter(Date == date_vol) |> 
   select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
 
 ```
 
-C'était le `r date_vol`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` du `r rmarkdown::metadata$emotion`.
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` du `r rmarkdown::metadata$emotion`.
 
 
 ## Images de la journée

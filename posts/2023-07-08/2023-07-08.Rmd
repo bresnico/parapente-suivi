@@ -1,7 +1,7 @@
 ---
 title: "Second jour SIV"
 author: "Nicolas Bressoud"
-date: "07/08/2023"
+date: "2023-07-08"
 vols: "2"
 emotion: "euphorique"
 intense: "très"

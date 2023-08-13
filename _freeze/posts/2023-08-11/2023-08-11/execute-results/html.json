@@ -1,0 +1,14 @@
+{
+  "hash": "4c784db0a0feb69033df4bb6818b3054",
+  "result": {
+    "markdown": "---\ntitle: \"Hike and fly magnifique\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2023-08-11\"\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: TRUE\nwalk: \"1h30\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 11 août 2023. Je suis parti de la région de Sonchaux (Villeneuve) à 19:50:00 et j'ai atterri dans la région de Sonchaux (Villeneuve) pour un durée de vol de 00:15:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\nOn a voulu partir du col sous la dent de Jaman, les conditions étant optimales. Mais le vent a tourné Nord. Sam et moi avons décidé de marcher jusqu'à Sonchaux. Excellente idée !\n\n## Images de la journée\n\n\n![](../../img/2023-08-11/1.jpeg)\n![](../../img/2023-08-11/2.jpeg)\n![](../../img/2023-08-11/3.jpeg)\n![](../../img/2023-08-11/4.jpeg)\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2023-08-11.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ 1h30.\n\n::: {.cell-output-display}\n![](../../img/2023-08-11_walk.jpeg)\n:::\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

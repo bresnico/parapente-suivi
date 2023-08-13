@@ -1,7 +1,7 @@
 ---
 title: "Petit Hike'n fly post SIV"
 author: "Nicolas Bressoud"
-date: "07/15/2023"
+date: "2023-07-15"
 vols: "1"
 emotion: "certitude"
 intense: "suffisamment"
@@ -19,7 +19,7 @@ library(here)
 library(tidyverse)
 library(rmarkdown)
 
-date_vol <- "15 juil. 2023"
+date_vol <- metadata$date
 n_vols <- metadata$vols
 ```
 
@@ -45,12 +45,12 @@ d <- readRDS(here("data","data.rds"))
 # d$date_vol <- trimws(d$date_vol, which = "left")
 
 d_post <- d |> 
-  filter(Date == "15 juil. 2023") |> 
+  filter(Date == date_vol) |> 
   select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
 
 ```
 
-C'était le `r date_vol`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
 
 On avait un vent météo du sud-ouest bien appuyer. Il y avait un vent thermique de tous les côtés. J'ai bien étudié ma Météo et j'ai décollé en toute confiance. Comme prévu ça a bien bougé un vol jusqu'à une hauteur de 1500 m. J'ai pris du 1,5 m/s. Je suis vite descendu parce que, même si ça me faisait pas peur, j'aime pas ça.
 

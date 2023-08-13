@@ -1,12 +1,12 @@
 ---
-title: "Enfin un vol depuis Torgon !"
+title: "Hike and fly magnifique"
 author: "Nicolas Bressoud"
-date: "2023-03-03"
+date: "2023-08-11"
 vols: "1"
 emotion: "plaisir"
-intense: "beaucoup"
-hike: FALSE
-walk: ""
+intense: "bien"
+hike: TRUE
+walk: "1h30"
 categories: [hook5p]
 image: 'image.jpg'
 ---
@@ -31,6 +31,18 @@ n_vols <- metadata$vols
 
 d <- readRDS(here("data","data.rds"))
 
+# d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
+
+# d$date_vol <- as.Date(d$date_vol)
+
+# Formatez les dates avec strftime()
+# d$date_vol <- strftime(d$date_vol, "%e %B %Y")
+
+# Restaurez la locale précédente
+# Sys.setlocale("LC_TIME", old_locale)
+
+# Enlever l'éventuel espace au début
+# d$date_vol <- trimws(d$date_vol, which = "left")
 
 d_post <- d |> 
   filter(Date == date_vol) |> 
@@ -38,26 +50,11 @@ d_post <- d |>
 
 ```
 
-C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` du `r rmarkdown::metadata$emotion`.
 
-On était avec Sam qui avait son nouveau matériel également. On a parlé du cours SIV qui approche.
-
-On a traversé des petits nuages qui s'accrochaient à Torgon virage. Top.
-
-Je dois toujours apprendre à plier ma voile.
+On a voulu partir du col sous la dent de Jaman, les conditions étant optimales. Mais le vent a tourné Nord. Sam et moi avons décidé de marcher jusqu'à Sonchaux. Excellente idée !
 
 ## Images de la journée
-
-Voici un tracé sélectionné de la journée : 
-
-```{r}
-#| echo: false
-#| warning: false
-
-knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
-```
-
-Et quelques photos de vol prises par Sam (sauf celle de ma voile en vol) : 
 
 ```{r echo=FALSE}
 #| echo: false
@@ -73,6 +70,16 @@ if (dir.exists(here("img", date_vol))) {
 
 ```
 
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+```
+
 ## Hike and Fly
 
 ```{r}
@@ -83,9 +90,11 @@ if (metadata$hike == TRUE) {
   walk <- metadata$walk
   hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ ", walk, ".")
   pic <- knitr::include_graphics(path= here("img", paste0(date_vol,"_walk",".jpeg")))
+
 } else {
   hike <- "je n'ai pas fait de hike'n fly."
   pic <- ""
+  pic2 <- ""
 }
 
 ```
@@ -93,3 +102,4 @@ if (metadata$hike == TRUE) {
 `r hike`
 
 `r pic`
+

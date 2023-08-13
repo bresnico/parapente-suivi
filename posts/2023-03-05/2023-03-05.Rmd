@@ -1,7 +1,7 @@
 ---
 title: "Réapprendre à décoller !"
 author: "Nicolas Bressoud"
-date: "5 mars 2023"
+date: "2023-03-05"
 vols: "1"
 emotion: "curiosité"
 intense: "pas mal"
@@ -38,7 +38,7 @@ d_post <- d |>
 
 ```
 
-C'était le `r rmarkdown::metadata$date`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` de `r rmarkdown::metadata$emotion`.
 
 On était avec Sam et Jean-Da. Les familles étaient sur place pour assister à l'atterrissage. C'est très sympa de se retrouver tous ensemble.
 
@@ -73,14 +73,21 @@ Voici un tracé sélectionné de la journée :
 knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
 ```
 
-Et quelques photos prises par Laure : 
 
-```{r echo=FALSE}
+```{r}
+#| echo: false
+#| warning: false
+#| results: asis 
 
-knitr::include_graphics(path = here("img", "5 mars 2023", "5 mars 2023 - 1.jpeg"))
-knitr::include_graphics(path = here("img", "5 mars 2023", "5 mars 2023 - 2.jpeg"))
+if (dir.exists(here("img", date_vol))) {
+  fichiers <- list.files(here("img", date_vol), full.names = FALSE)
+  for (i in seq_along(fichiers)) {
+    cat("![](","../../img/", date_vol, "/", fichiers[i], ")\n", sep="")
+  }
+}
 
 ```
+
 
 
 ## Hike and Fly

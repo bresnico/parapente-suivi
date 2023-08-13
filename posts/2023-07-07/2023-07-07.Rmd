@@ -1,7 +1,7 @@
 ---
 title: "Premier jour SIV"
 author: "Nicolas Bressoud"
-date: "07/07/2023"
+date: "2023-07-07"
 vols: "3"
 emotion: "confiance"
 intense: "un peu"
