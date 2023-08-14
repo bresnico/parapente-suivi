@@ -82,7 +82,7 @@ knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
 if (dir.exists(here("img", date_vol))) {
   fichiers <- list.files(here("img", date_vol), full.names = FALSE)
   for (i in seq_along(fichiers)) {
-    cat("![](","../../img/", date_vol, "/", fichiers[i], ")\n", sep="")
+    cat("![](","../../img/", date_vol, "/", fichiers[i], ")\n", "<br/><br/>", sep="")
   }
 }
 
