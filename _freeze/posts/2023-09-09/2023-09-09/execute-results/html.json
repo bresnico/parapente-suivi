@@ -1,0 +1,14 @@
+{
+  "hash": "15c8b151c808fb91beb93b75f6997ff8",
+  "result": {
+    "markdown": "---\ntitle: \"Lever à 5h45 avec le vélo pour se faire plaisir !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2023-09-09\"\nvols: \"1\"\nemotion: \"joie\"\nintense: \"plein\"\nhike: TRUE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 09 September 2023. Je suis parti de la région de Pointe de Bellevue-2030 à 08:35:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:20:00. J'ai volé 1 fois dans la journée. J'ai ressenti plein du joie.\n\nLever à 5h45 et vélo pour rendez-vous aux Ilettes à 6h30. Après un café en ville,papa m'a monté au col. C'était très sympa. Retour en vélo électrique à la maison avant 10h00.\n\n## Images de la journée\n\n\n![](../../img/2023-09-09/IMG_4034.jpeg)\n<br/><br/>![](../../img/2023-09-09/IMG_4035.jpeg)\n<br/><br/>![](../../img/2023-09-09/IMG_4036.jpeg)\n<br/><br/>![](../../img/2023-09-09/IMG_4037.jpeg)\n<br/><br/>![](../../img/2023-09-09/IMG_4038.jpeg)\n<br/><br/>![](../../img/2023-09-09/IMG_4040.jpeg)\n<br/><br/>![](../../img/2023-09-09/IMG_4041.jpeg)\n<br/><br/>\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2023-09-09.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ .\n\n::: {.cell-output-display}\n![](../../img/2023-09-09_walk.jpeg)\n:::\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
