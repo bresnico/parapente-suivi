@@ -1,0 +1,14 @@
+{
+  "hash": "619072db17bb1c7eb31c1e0179a81ef1",
+  "result": {
+    "markdown": "---\ntitle: \"ENfin !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2024-01-13\"\nvols: \"1\"\nemotion: \"satisfaction\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 13 January 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 11:59:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:12:00. J'ai volé 1 fois dans la journée. J'ai ressenti  de la satisfaction.\n\nIl y avait Jean-Da et Sam. Très sympa.\n\n## Images de la journée\n\n\n![](../../img/2024-01-13/IMG_4772.jpeg)\n<br/><br/>![](../../img/2024-01-13/IMG_4773.jpeg)\n<br/><br/>![](../../img/2024-01-13/IMG_4830.jpeg)\n<br/><br/>\n\n{{< video https://youtu.be/gwjyOG-m5Lg >}}\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-01-13.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

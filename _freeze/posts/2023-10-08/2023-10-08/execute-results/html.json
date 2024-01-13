@@ -1,0 +1,14 @@
+{
+  "hash": "370ae9a661a09845f142ec2a48e2dba5",
+  "result": {
+    "markdown": "---\ntitle: \"Avec les copains et la famille !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2023-10-08\"\nvols: \"1\"\nemotion: \"joie\"\nintense: \"plein\"\nhike: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le {{< meta date >}}. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:16:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:10:00. J'ai volé 1 fois dans la journée. J'ai ressenti plein du joie.\n\nManu et les enfants étaient en plaine avec Laure et les filles. Sam et Jean-Da étaient en l'air. Top !\n## Images de la journée\n\n\n![](../../img/2023-10-08/IMG_4240.jpg)\n<br/><br/>\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2023-10-08.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hash": "781ecb447fab5d80bfe60c11a79b6f0c",
+  "result": {
+    "markdown": "---\ntitle: \"Initiation d'Agathe\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2023-09-30\"\nvols: \"2\"\nemotion: \"joie\"\nintense: \"plein\"\nhike: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 30 septembre 2023. On a volé à Charmey. J'ai volé 2 fois dans la journée. J'ai ressenti un grand plaisir à voler en simplicité et initier Agathe.\n\nMes parents et Cécile étaient sur place, avec Sam et Jean-Da, pour cela.\n\n## Images de la journée\n\n\n![](../../img/2023-09-30/IMG_3677.JPG)\n<br/><br/>![](../../img/2023-09-30/IMG_4136.jpeg)\n<br/><br/>![](../../img/2023-09-30/IMG_4142.JPG)\n<br/><br/>![](../../img/2023-09-30/IMG_4159.jpeg)\n<br/><br/>\n\n\n## Vidéo souvenir\n\n\n{{< video https://www.youtube.com/watch?v=NXrzdoSP9Z4 >}}\n\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
