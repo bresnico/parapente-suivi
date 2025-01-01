@@ -16,7 +16,7 @@ title-block-banner: true
 <h3>
 <script>
 let date_a = new Date();
-let date_b = new Date(2024, 00, 13);
+let date_b = new Date(2024, 11, 31);
 
 const days = (date_a, date_b) =>{
     let difference = date_a.getTime() - date_b.getTime();

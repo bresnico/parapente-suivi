@@ -1,0 +1,15 @@
+{
+  "hash": "1e7db8d88e612cdf7a544a167ce93498",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Vol dans le calme, juste les 3 !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2024-08-10\"\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n\n## Infos sur la journée\n\n\n\n::: {.cell}\n\n:::\n\n\n\nC'était le 10 August 2024. Je suis parti de la région de Sonchaux (Villeneuve) à 09:13:00 et j'ai atterri dans la région de Rennaz pour un durée de vol de 00:14:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\nIl y avait Jean-Da et Sam. Très sympa. On a volé avec les navettes. Bon déco, bon atterro. RAS.\n\n## Images de la journée\n\n\n\n\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-08-10.jpeg)\n:::\n:::\n\n\n\n## Hike and Fly\n\n\n\n::: {.cell}\n\n:::\n\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

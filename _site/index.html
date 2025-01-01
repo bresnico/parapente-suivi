@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Niviuk Naktuk - Mon carnet de vol</title>
+<title>Mon carnet de vol – Niviuk Naktuk</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,17 +38,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Pas de résultats",
     "search-matching-documents-text": "documents trouvés",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "correspondance de plus dans ce document",
     "search-more-matches-text": "correspondances de plus dans ce document",
     "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Annuler",
     "search-submit-button-title": "Envoyer",
     "search-label": "Recherche"
@@ -73,7 +80,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
@@ -92,8 +100,35 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -101,38 +136,38 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Niviuk Naktuk</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">A propos</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">A propos</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/bresnico" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/bresnico"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/NBressoud" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/NBressoud"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -145,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -158,9 +193,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(18)</span></div><div class="category" data-category="hook5p">hook5p <span class="quarto-category-count">(18)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Tous <span class="quarto-category-count">(29)</span></div><div class="category" data-category="aG9vazVw">hook5p <span class="quarto-category-count">(29)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
 
 
 
@@ -169,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored">
 <script>
 let date_a = new Date();
-let date_b = new Date(2024, 00, 13);
+let date_b = new Date(2024, 11, 31);
 
 const days = (date_a, date_b) =>{
     let difference = date_a.getTime() - date_b.getTime();
@@ -188,32 +224,393 @@ document.write("Bon ben nous sommes le " + date_a.toLocaleDateString() + " et j'
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="hook5p" data-listing-date-sort="1705100400000" data-listing-file-modified-sort="1705173721766" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="aG9vazVw" data-listing-date-sort="1735599600000" data-listing-file-modified-sort="1735740519676" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="252">
 <div class="thumbnail">
-<p><a href="./posts/2024-01-13/2024-01-13.html"> <img src="./posts/2024-01-13/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2024-12-31/2024-12-31.html" class="no-external"></a></p><a href="./posts/2024-12-31/2024-12-31.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-12-31/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-12-31/2024-12-31.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2024-01-13/2024-01-13.html">
 <h3 class="no-anchor listing-title">
-ENfin !
+<a href="./posts/2024-12-31/2024-12-31.html" class="no-external">Second vol du jour et dernier vol de 2024 !</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2024-12-31/2024-12-31.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2024-01-13/2024-01-13.html">
 <div class="listing-description">
-C’était le 13 January 2024. Je suis parti de la région de Vionnaz…
+<a href="./posts/2024-12-31/2024-12-31.html" class="no-external">C’était le 31 December 2024. Je suis parti de la région de En Curnaux à 13:24:00 et j’ai atterri dans la région de Villy pour un durée de vol de 00:10:00. J’ai volé 1 fois…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-12-31/2024-12-31.html" class="no-external">
+<div class="listing-date">
+31/12/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
 </div>
 </a>
 </div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="aG9vazVw" data-listing-date-sort="1735599600000" data-listing-file-modified-sort="1735740480140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+<div class="thumbnail">
+<p><a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external"></a></p><a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-12-31_2/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external">Joli vol depuis Torgon</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external">C’était le 31 December 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:47:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
+</div>
+</div>
 <div class="metadata">
-<a href="./posts/2024-01-13/2024-01-13.html">
+<a href="./posts/2024-12-31_2/2024-12-31.html" class="no-external">
+<div class="listing-date">
+31/12/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="aG9vazVw" data-listing-date-sort="1735513200000" data-listing-file-modified-sort="1735587440848" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="289">
+<div class="thumbnail">
+<p><a href="./posts/2024-12-30/2024-12-30.html" class="no-external"></a></p><a href="./posts/2024-12-30/2024-12-30.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-12-30/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-12-30/2024-12-30.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-12-30/2024-12-30.html" class="no-external">Joli vol depuis la Foilleuse avec Emmanuel</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-12-30/2024-12-30.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-12-30/2024-12-30.html" class="no-external">C’était le 30 December 2024. On est partis de la région de NA à 11:56:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:18:00. J’ai volé 1…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-12-30/2024-12-30.html" class="no-external">
+<div class="listing-date">
+30/12/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="aG9vazVw" data-listing-date-sort="1730329200000" data-listing-file-modified-sort="1730391713853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
+<div class="thumbnail">
+<p><a href="./posts/2024-10-31/2024-10-31.html" class="no-external"></a></p><a href="./posts/2024-10-31/2024-10-31.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-10-31/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-10-31/2024-10-31.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-10-31/2024-10-31.html" class="no-external">Premier vol en responsabilité pour Emmanuel !</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-10-31/2024-10-31.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-10-31/2024-10-31.html" class="no-external">C’était le 31 October 2024. Je suis parti de la région des Cerniers à 10:39:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:12:00. J’ai…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-10-31/2024-10-31.html" class="no-external">
+<div class="listing-date">
+31/10/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="aG9vazVw" data-listing-date-sort="1723327200000" data-listing-file-modified-sort="1723382867242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
+<div class="thumbnail">
+<p><a href="./posts/2024-08-11/2024-08-11.html" class="no-external"></a></p><a href="./posts/2024-08-11/2024-08-11.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-08-11/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-08-11/2024-08-11.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-11/2024-08-11.html" class="no-external">Petit vol après repas en famille à Chindonne</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-08-11/2024-08-11.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-08-11/2024-08-11.html" class="no-external">C’était le 11 August 2024. Je suis parti de la région de Valerette à 13:02:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:14:00. J’ai…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-11/2024-08-11.html" class="no-external">
+<div class="listing-date">
+11/08/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="aG9vazVw" data-listing-date-sort="1723240800000" data-listing-file-modified-sort="1723296132347" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
+<div class="thumbnail">
+<p><a href="./posts/2024-08-10/2024-08-10.html" class="no-external"></a></p><a href="./posts/2024-08-10/2024-08-10.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-08-10/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-08-10/2024-08-10.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-08-10/2024-08-10.html" class="no-external">Vol dans le calme, juste les 3 !</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-08-10/2024-08-10.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-08-10/2024-08-10.html" class="no-external">C’était le 10 August 2024. Je suis parti de la région de Sonchaux (Villeneuve) à 09:13:00 et j’ai atterri dans la région de Rennaz pour un durée de vol de 00:14:00. J’ai…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-08-10/2024-08-10.html" class="no-external">
+<div class="listing-date">
+10/08/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="aG9vazVw" data-listing-date-sort="1716674400000" data-listing-file-modified-sort="1716972563184" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+<div class="thumbnail">
+<p><a href="./posts/2024-05-26/2024-05-26.html" class="no-external"></a></p><a href="./posts/2024-05-26/2024-05-26.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-05-26/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-05-26/2024-05-26.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-26/2024-05-26.html" class="no-external">Petit vol avant le renforcement du sud ouest</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-05-26/2024-05-26.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-05-26/2024-05-26.html" class="no-external">C’était le 26 May 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:18:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-26/2024-05-26.html" class="no-external">
+<div class="listing-date">
+26/05/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="aG9vazVw" data-listing-date-sort="1716588000000" data-listing-file-modified-sort="1716972549421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="248">
+<div class="thumbnail">
+<p><a href="./posts/2024-05-25/2024-05-25.html" class="no-external"></a></p><a href="./posts/2024-05-25/2024-05-25.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-05-25/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-05-25/2024-05-25.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-05-25/2024-05-25.html" class="no-external">Baptême de l’air de Ludi</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-05-25/2024-05-25.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-05-25/2024-05-25.html" class="no-external">C’était le 25 May 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 09:56:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-05-25/2024-05-25.html" class="no-external">
+<div class="listing-date">
+25/05/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="aG9vazVw" data-listing-date-sort="1713045600000" data-listing-file-modified-sort="1713099610278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
+<div class="thumbnail">
+<p><a href="./posts/2024-04-14/2024-04-14.html" class="no-external"></a></p><a href="./posts/2024-04-14/2024-04-14.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-04-14/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-04-14/2024-04-14.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-04-14/2024-04-14.html" class="no-external">Atterrissage avec un bon vent de face</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-04-14/2024-04-14.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-04-14/2024-04-14.html" class="no-external">C’était le 14 April 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:04:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-04-14/2024-04-14.html" class="no-external">
+<div class="listing-date">
+14/04/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="aG9vazVw" data-listing-date-sort="1707001200000" data-listing-file-modified-sort="1707061629689" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+<div class="thumbnail">
+<p><a href="./posts/2024-02-04/2024-02-04.html" class="no-external"></a></p><a href="./posts/2024-02-04/2024-02-04.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-02-04/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-02-04/2024-02-04.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-02-04/2024-02-04.html" class="no-external">Foilleuse encore !</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-02-04/2024-02-04.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-02-04/2024-02-04.html" class="no-external">C’était le 04 February 2024. Je suis parti de la région de la Foilleuse à 14:15:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:17:00.…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-02-04/2024-02-04.html" class="no-external">
+<div class="listing-date">
+04/02/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="aG9vazVw" data-listing-date-sort="1706396400000" data-listing-file-modified-sort="1706450187836" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+<div class="thumbnail">
+<p><a href="./posts/2024-01-28/2024-01-28.html" class="no-external"></a></p><a href="./posts/2024-01-28/2024-01-28.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-01-28/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-01-28/2024-01-28.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-01-28/2024-01-28.html" class="no-external">La Foilleuse !</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-01-28/2024-01-28.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-01-28/2024-01-28.html" class="no-external">C’était le 28 January 2024. Je suis parti de la région de La Foilleuse à 13:46:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:16:00.…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-01-28/2024-01-28.html" class="no-external">
+<div class="listing-date">
+28/01/2024
+</div>
+<div class="listing-author">
+Nicolas Bressoud
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="aG9vazVw" data-listing-date-sort="1705100400000" data-listing-file-modified-sort="1707061700360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
+<div class="thumbnail">
+<p><a href="./posts/2024-01-13/2024-01-13.html" class="no-external"></a></p><a href="./posts/2024-01-13/2024-01-13.html" class="no-external">
+<p><img loading="lazy" src="./posts/2024-01-13/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2024-01-13/2024-01-13.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2024-01-13/2024-01-13.html" class="no-external">Enfin !</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/2024-01-13/2024-01-13.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
+hook5p
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/2024-01-13/2024-01-13.html" class="no-external">C’était le 13 January 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 11:59:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2024-01-13/2024-01-13.html" class="no-external">
 <div class="listing-date">
 13/01/2024
 </div>
@@ -223,32 +620,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="hook5p" data-listing-date-sort="1696716000000" data-listing-file-modified-sort="1697907336000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="12" data-categories="aG9vazVw" data-listing-date-sort="1696716000000" data-listing-file-modified-sort="1705174470508" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
 <div class="thumbnail">
-<p><a href="./posts/2023-10-08/2023-10-08.html"> <img src="./posts/2023-10-08/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-10-08/2023-10-08.html" class="no-external"></a></p><a href="./posts/2023-10-08/2023-10-08.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-10-08/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-10-08/2023-10-08.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-10-08/2023-10-08.html">
 <h3 class="no-anchor listing-title">
-Avec les copains et la famille !
+<a href="./posts/2023-10-08/2023-10-08.html" class="no-external">Avec les copains et la famille !</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-10-08/2023-10-08.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-10-08/2023-10-08.html">
 <div class="listing-description">
-C’était le 8 octobre 2023. Je suis parti de la région de Vionnaz…
+<a href="./posts/2023-10-08/2023-10-08.html" class="no-external">C’était le 8 octobre 2023. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:16:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-10-08/2023-10-08.html">
+<a href="./posts/2023-10-08/2023-10-08.html" class="no-external">
 <div class="listing-date">
 08/10/2023
 </div>
@@ -258,32 +653,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="hook5p" data-listing-date-sort="1696024800000" data-listing-file-modified-sort="1696142533000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="13" data-categories="aG9vazVw" data-listing-date-sort="1696024800000" data-listing-file-modified-sort="1705174470507" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="236">
 <div class="thumbnail">
-<p><a href="./posts/2023-09-30/2023-09-30.html"> <img src="./posts/2023-09-30/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-09-30/2023-09-30.html" class="no-external"></a></p><a href="./posts/2023-09-30/2023-09-30.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-09-30/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-09-30/2023-09-30.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-09-30/2023-09-30.html">
 <h3 class="no-anchor listing-title">
-Initiation d’Agathe
+<a href="./posts/2023-09-30/2023-09-30.html" class="no-external">Initiation d’Agathe</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-09-30/2023-09-30.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-09-30/2023-09-30.html">
 <div class="listing-description">
-C’était le 30 septembre 2023. On a volé à Charmey. J’ai volé 2 fois dans la journée. J’ai ressenti un grand plaisir à voler en simplicité et initier Agathe.
+<a href="./posts/2023-09-30/2023-09-30.html" class="no-external">C’était le 30 septembre 2023. On a volé à Charmey. J’ai volé 2 fois dans la journée. J’ai ressenti un grand plaisir à voler en simplicité et initier Agathe.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-09-30/2023-09-30.html">
+<a href="./posts/2023-09-30/2023-09-30.html" class="no-external">
 <div class="listing-date">
 30/09/2023
 </div>
@@ -293,32 +686,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="hook5p" data-listing-date-sort="1694210400000" data-listing-file-modified-sort="1694249959000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="14" data-categories="aG9vazVw" data-listing-date-sort="1694210400000" data-listing-file-modified-sort="1705174470499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
 <div class="thumbnail">
-<p><a href="./posts/2023-09-09/2023-09-09.html"> <img src="./posts/2023-09-09/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-09-09/2023-09-09.html" class="no-external"></a></p><a href="./posts/2023-09-09/2023-09-09.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-09-09/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-09-09/2023-09-09.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-09-09/2023-09-09.html">
 <h3 class="no-anchor listing-title">
-Lever à 5h45 avec le vélo pour se faire plaisir !
+<a href="./posts/2023-09-09/2023-09-09.html" class="no-external">Lever à 5h45 avec le vélo pour se faire plaisir !</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-09-09/2023-09-09.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-09-09/2023-09-09.html">
 <div class="listing-description">
-C’était le 09 September 2023. Je suis parti de la région de Pointe…
+<a href="./posts/2023-09-09/2023-09-09.html" class="no-external">C’était le 09 September 2023. Je suis parti de la région de Pointe de Bellevue-2030 à 08:35:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-09-09/2023-09-09.html">
+<a href="./posts/2023-09-09/2023-09-09.html" class="no-external">
 <div class="listing-date">
 09/09/2023
 </div>
@@ -328,32 +719,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="hook5p" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1692545196000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="15" data-categories="aG9vazVw" data-listing-date-sort="1692482400000" data-listing-file-modified-sort="1705174470498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="246">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-20/2023-08-20.html"> <img src="./posts/2023-08-20/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-08-20/2023-08-20.html" class="no-external"></a></p><a href="./posts/2023-08-20/2023-08-20.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-08-20/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-08-20/2023-08-20.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-20/2023-08-20.html">
 <h3 class="no-anchor listing-title">
-Petit vol du matin sous le dôme de chaleur
+<a href="./posts/2023-08-20/2023-08-20.html" class="no-external">Petit vol du matin sous le dôme de chaleur</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-20/2023-08-20.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-08-20/2023-08-20.html">
 <div class="listing-description">
-C’était le 20 August 2023. Je suis parti de la…
+<a href="./posts/2023-08-20/2023-08-20.html" class="no-external">C’était le 20 August 2023. Je suis parti de la région de Vionnaz Turn à 09:31:00 et j’ai atterri dans la région de Mayen pour un durée de vol de 00:07:00. J’ai volé 1 fois…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-20/2023-08-20.html">
+<a href="./posts/2023-08-20/2023-08-20.html" class="no-external">
 <div class="listing-date">
 20/08/2023
 </div>
@@ -363,32 +752,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="hook5p" data-listing-date-sort="1692050400000" data-listing-file-modified-sort="1692100596000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="16" data-categories="aG9vazVw" data-listing-date-sort="1692050400000" data-listing-file-modified-sort="1705174470497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="257">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-15/2023-08-15.html"> <img src="./posts/2023-08-15/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-08-15/2023-08-15.html" class="no-external"></a></p><a href="./posts/2023-08-15/2023-08-15.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-08-15/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-08-15/2023-08-15.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-15/2023-08-15.html">
 <h3 class="no-anchor listing-title">
-Petit vol sympa et ambiance famille
+<a href="./posts/2023-08-15/2023-08-15.html" class="no-external">Petit vol sympa et ambiance famille</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-15/2023-08-15.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-08-15/2023-08-15.html">
 <div class="listing-description">
-C’était le 15 août 2023. Je suis parti de la région de Vionnaz…
+<a href="./posts/2023-08-15/2023-08-15.html" class="no-external">C’était le 15 août 2023. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:23:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-15/2023-08-15.html">
+<a href="./posts/2023-08-15/2023-08-15.html" class="no-external">
 <div class="listing-date">
 15/08/2023
 </div>
@@ -398,32 +785,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="hook5p" data-listing-date-sort="1691704800000" data-listing-file-modified-sort="1691937294000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="17" data-categories="aG9vazVw" data-listing-date-sort="1691704800000" data-listing-file-modified-sort="1705174470496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-11/2023-08-11.html"> <img src="./posts/2023-08-11/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-08-11/2023-08-11.html" class="no-external"></a></p><a href="./posts/2023-08-11/2023-08-11.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-08-11/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-08-11/2023-08-11.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-11/2023-08-11.html">
 <h3 class="no-anchor listing-title">
-Hike and fly magnifique
+<a href="./posts/2023-08-11/2023-08-11.html" class="no-external">Hike and fly magnifique</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-11/2023-08-11.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-08-11/2023-08-11.html">
 <div class="listing-description">
-C’était le 11 août 2023. Je suis parti de la région de Sonchaux…
+<a href="./posts/2023-08-11/2023-08-11.html" class="no-external">C’était le 11 août 2023. Je suis parti de la région de Sonchaux (Villeneuve) à 19:50:00 et j’ai atterri dans la région de Sonchaux (Villeneuve) pour un durée de vol de…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-11/2023-08-11.html">
+<a href="./posts/2023-08-11/2023-08-11.html" class="no-external">
 <div class="listing-date">
 11/08/2023
 </div>
@@ -433,32 +818,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="hook5p" data-listing-date-sort="1691532000000" data-listing-file-modified-sort="1691936550000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="18" data-categories="aG9vazVw" data-listing-date-sort="1691532000000" data-listing-file-modified-sort="1705174470495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
 <div class="thumbnail">
-<p><a href="./posts/2023-08-09/2023-08-09.html"> <img src="./posts/2023-08-09/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-08-09/2023-08-09.html" class="no-external"></a></p><a href="./posts/2023-08-09/2023-08-09.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-08-09/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-08-09/2023-08-09.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-08-09/2023-08-09.html">
 <h3 class="no-anchor listing-title">
-Vol du matin à Torgon
+<a href="./posts/2023-08-09/2023-08-09.html" class="no-external">Vol du matin à Torgon</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-08-09/2023-08-09.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-08-09/2023-08-09.html">
 <div class="listing-description">
-C’était le 09 août 2023. Je suis parti…
+<a href="./posts/2023-08-09/2023-08-09.html" class="no-external">C’était le 09 août 2023. Je suis parti de la région de Vionnaz Turn à 09:53:00 et j’ai atterri dans la région de Mayen pour un durée de vol de 00:07:00. J’ai volé 1 fois…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-08-09/2023-08-09.html">
+<a href="./posts/2023-08-09/2023-08-09.html" class="no-external">
 <div class="listing-date">
 09/08/2023
 </div>
@@ -468,32 +851,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="hook5p" data-listing-date-sort="1689372000000" data-listing-file-modified-sort="1691936537000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="19" data-categories="aG9vazVw" data-listing-date-sort="1689372000000" data-listing-file-modified-sort="1705174470494" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="274">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-15/2023-07-15.html"> <img src="./posts/2023-07-15/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-07-15/2023-07-15.html" class="no-external"></a></p><a href="./posts/2023-07-15/2023-07-15.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-15/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-07-15/2023-07-15.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-15/2023-07-15.html">
 <h3 class="no-anchor listing-title">
-Petit Hike’n fly post SIV
+<a href="./posts/2023-07-15/2023-07-15.html" class="no-external">Petit Hike’n fly post SIV</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-15/2023-07-15.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-07-15/2023-07-15.html">
 <div class="listing-description">
-C’était le 15 juillet 2023. Je suis parti de la région de…
+<a href="./posts/2023-07-15/2023-07-15.html" class="no-external">C’était le 15 juillet 2023. Je suis parti de la région de Valerette à 16:25:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:16:00. J’ai…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-15/2023-07-15.html">
+<a href="./posts/2023-07-15/2023-07-15.html" class="no-external">
 <div class="listing-date">
 15/07/2023
 </div>
@@ -503,32 +884,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="hook5p" data-listing-date-sort="1688767200000" data-listing-file-modified-sort="1691932081000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="20" data-categories="aG9vazVw" data-listing-date-sort="1688767200000" data-listing-file-modified-sort="1705174470493" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="170">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-08/2023-07-08.html"> <img src="./posts/2023-07-08/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-07-08/2023-07-08.html" class="no-external"></a></p><a href="./posts/2023-07-08/2023-07-08.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-08/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-07-08/2023-07-08.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-08/2023-07-08.html">
 <h3 class="no-anchor listing-title">
-Second jour SIV
+<a href="./posts/2023-07-08/2023-07-08.html" class="no-external">Second jour SIV</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-08/2023-07-08.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-07-08/2023-07-08.html">
 <div class="listing-description">
-C’était le jour 2 sur 2 pour notre SIV avec sam ! Ce samedi 8 juillet 2023, on a fait 2 vols.
+<a href="./posts/2023-07-08/2023-07-08.html" class="no-external">C’était le jour 2 sur 2 pour notre SIV avec sam ! Ce samedi 8 juillet 2023, on a fait 2 vols.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-08/2023-07-08.html">
+<a href="./posts/2023-07-08/2023-07-08.html" class="no-external">
 <div class="listing-date">
 08/07/2023
 </div>
@@ -538,32 +917,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="hook5p" data-listing-date-sort="1688680800000" data-listing-file-modified-sort="1691932065000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="21" data-categories="aG9vazVw" data-listing-date-sort="1688680800000" data-listing-file-modified-sort="1705174470492" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-07/2023-07-07.html"> <img src="./posts/2023-07-07/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-07-07/2023-07-07.html" class="no-external"></a></p><a href="./posts/2023-07-07/2023-07-07.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-07/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-07-07/2023-07-07.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-07/2023-07-07.html">
 <h3 class="no-anchor listing-title">
-Premier jour SIV
+<a href="./posts/2023-07-07/2023-07-07.html" class="no-external">Premier jour SIV</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-07/2023-07-07.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-07-07/2023-07-07.html">
 <div class="listing-description">
-C’était le jour 1 sur 2 pour notre SIV avec sam ! Ce vendredi 7 juillet 2023, on a fait 3 vols.
+<a href="./posts/2023-07-07/2023-07-07.html" class="no-external">C’était le jour 1 sur 2 pour notre SIV avec sam ! Ce vendredi 7 juillet 2023, on a fait 3 vols.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-07/2023-07-07.html">
+<a href="./posts/2023-07-07/2023-07-07.html" class="no-external">
 <div class="listing-date">
 07/07/2023
 </div>
@@ -573,32 +950,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="hook5p" data-listing-date-sort="1688594400000" data-listing-file-modified-sort="1691936514000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="22" data-categories="aG9vazVw" data-listing-date-sort="1688594400000" data-listing-file-modified-sort="1705174470491" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="331">
 <div class="thumbnail">
-<p><a href="./posts/2023-07-06/2023-07-06.html"> <img src="./posts/2023-07-06/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-07-06/2023-07-06.html" class="no-external"></a></p><a href="./posts/2023-07-06/2023-07-06.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-07-06/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-07-06/2023-07-06.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-07-06/2023-07-06.html">
 <h3 class="no-anchor listing-title">
-Mise en confiance avec les cours SIV
+<a href="./posts/2023-07-06/2023-07-06.html" class="no-external">Mise en confiance avec les cours SIV</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-07-06/2023-07-06.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-07-06/2023-07-06.html">
 <div class="listing-description">
-C’était le 06 juillet 2023. Je suis parti de la…
+<a href="./posts/2023-07-06/2023-07-06.html" class="no-external">C’était le 06 juillet 2023. Je suis parti de la région de Vionnaz Turn à 09:12:00 et j’ai atterri dans la région de Mayen pour un durée de vol de 00:17:00. J’ai volé 1 fois…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-07-06/2023-07-06.html">
+<a href="./posts/2023-07-06/2023-07-06.html" class="no-external">
 <div class="listing-date">
 06/07/2023
 </div>
@@ -608,32 +983,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="hook5p" data-listing-date-sort="1677970800000" data-listing-file-modified-sort="1691937346000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="23" data-categories="aG9vazVw" data-listing-date-sort="1677970800000" data-listing-file-modified-sort="1705174470490" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397">
 <div class="thumbnail">
-<p><a href="./posts/2023-03-05/2023-03-05.html"> <img src="./posts/2023-03-05/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-03-05/2023-03-05.html" class="no-external"></a></p><a href="./posts/2023-03-05/2023-03-05.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-03-05/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-03-05/2023-03-05.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-03-05/2023-03-05.html">
 <h3 class="no-anchor listing-title">
-Réapprendre à décoller !
+<a href="./posts/2023-03-05/2023-03-05.html" class="no-external">Réapprendre à décoller !</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-03-05/2023-03-05.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-03-05/2023-03-05.html">
 <div class="listing-description">
-C’était le 05 mars 2023. Je suis parti de la…
+<a href="./posts/2023-03-05/2023-03-05.html" class="no-external">C’était le 05 mars 2023. Je suis parti de la région de Vionnaz Turn à 10:39:00 et j’ai atterri dans la région de Mayen pour un durée de vol de 00:09:00. J’ai volé 1 fois…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-03-05/2023-03-05.html">
+<a href="./posts/2023-03-05/2023-03-05.html" class="no-external">
 <div class="listing-date">
 05/03/2023
 </div>
@@ -643,32 +1016,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="hook5p" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1691937333000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="24" data-categories="aG9vazVw" data-listing-date-sort="1677798000000" data-listing-file-modified-sort="1705174470489" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="249">
 <div class="thumbnail">
-<p><a href="./posts/2023-03-03/2023-03-03.html"> <img src="./posts/2023-03-03/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-03-03/2023-03-03.html" class="no-external"></a></p><a href="./posts/2023-03-03/2023-03-03.html" class="no-external">
+<p><img loading="lazy" src="./posts/2023-03-03/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-03-03/2023-03-03.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-03-03/2023-03-03.html">
 <h3 class="no-anchor listing-title">
-Enfin un vol depuis Torgon !
+<a href="./posts/2023-03-03/2023-03-03.html" class="no-external">Enfin un vol depuis Torgon !</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-03-03/2023-03-03.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-03-03/2023-03-03.html">
 <div class="listing-description">
-C’était le 03 mars 2023. Je suis parti de la région de Vionnaz…
+<a href="./posts/2023-03-03/2023-03-03.html" class="no-external">C’était le 03 mars 2023. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 09:45:00 et j’ai atterri dans la région de Mayen pour un durée de vol de…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-03-03/2023-03-03.html">
+<a href="./posts/2023-03-03/2023-03-03.html" class="no-external">
 <div class="listing-date">
 03/03/2023
 </div>
@@ -678,32 +1049,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="hook5p" data-listing-date-sort="1673046000000" data-listing-file-modified-sort="1691936469000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="25" data-categories="aG9vazVw" data-listing-date-sort="1673046000000" data-listing-file-modified-sort="1705174470488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
 <div class="thumbnail">
-<p><a href="./posts/2023-01-07/2023-01-07.html"> <img src="./posts/2023-01-07/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2023-01-07/2023-01-07.html" class="no-external"></a></p><a href="./posts/2023-01-07/2023-01-07.html" class="no-external">
+<p><img loading="lazy" data-src="./posts/2023-01-07/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2023-01-07/2023-01-07.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-01-07/2023-01-07.html">
 <h3 class="no-anchor listing-title">
-Depuis la maison&nbsp;: il était temps&nbsp;!
+<a href="./posts/2023-01-07/2023-01-07.html" class="no-external">Depuis la maison&nbsp;: il était temps&nbsp;!</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2023-01-07/2023-01-07.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2023-01-07/2023-01-07.html">
 <div class="listing-description">
-C’était le 07 janvier 2023. Je suis parti de la région…
+<a href="./posts/2023-01-07/2023-01-07.html" class="no-external">C’était le 07 janvier 2023. Je suis parti de la région de NA à 11:34:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:11:00. J’ai volé 1…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-01-07/2023-01-07.html">
+<a href="./posts/2023-01-07/2023-01-07.html" class="no-external">
 <div class="listing-date">
 07/01/2023
 </div>
@@ -713,32 +1082,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="hook5p" data-listing-date-sort="1667080800000" data-listing-file-modified-sort="1691936458000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="26" data-categories="aG9vazVw" data-listing-date-sort="1667080800000" data-listing-file-modified-sort="1705174470488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="205">
 <div class="thumbnail">
-<p><a href="./posts/2022-10-30/2022-10-30.html"> <img src="./posts/2022-10-30/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2022-10-30/2022-10-30.html" class="no-external"></a></p><a href="./posts/2022-10-30/2022-10-30.html" class="no-external">
+<p><img loading="lazy" data-src="./posts/2022-10-30/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022-10-30/2022-10-30.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-10-30/2022-10-30.html">
 <h3 class="no-anchor listing-title">
-Un grand vol depuis Bellevue en plein été indien
+<a href="./posts/2022-10-30/2022-10-30.html" class="no-external">Un grand vol depuis Bellevue en plein été indien</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-10-30/2022-10-30.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2022-10-30/2022-10-30.html">
 <div class="listing-description">
-C’était le 30 octobre 2022. Je suis parti de la région de…
+<a href="./posts/2022-10-30/2022-10-30.html" class="no-external">C’était le 30 octobre 2022. Je suis parti de la région de Pointe de Bellevue-2030 à 10:53:00 et j’ai atterri dans la région de Mayen pour un durée de vol de 00:22:00. J’ai…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-10-30/2022-10-30.html">
+<a href="./posts/2022-10-30/2022-10-30.html" class="no-external">
 <div class="listing-date">
 30/10/2022
 </div>
@@ -748,32 +1115,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="hook5p" data-listing-date-sort="1666130400000" data-listing-file-modified-sort="1705173552689" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="27" data-categories="aG9vazVw" data-listing-date-sort="1666130400000" data-listing-file-modified-sort="1705174470487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="161">
 <div class="thumbnail">
-<p><a href="./posts/2022-10-19/2022-10-19.html"> <img src="./posts/2022-10-19/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2022-10-19/2022-10-19.html" class="no-external"></a></p><a href="./posts/2022-10-19/2022-10-19.html" class="no-external">
+<p><img loading="lazy" data-src="./posts/2022-10-19/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022-10-19/2022-10-19.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-10-19/2022-10-19.html">
 <h3 class="no-anchor listing-title">
-Un deuxième vol en deux jours d’affilée !
+<a href="./posts/2022-10-19/2022-10-19.html" class="no-external">Un deuxième vol en deux jours d’affilée !</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-10-19/2022-10-19.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2022-10-19/2022-10-19.html">
 <div class="listing-description">
-C’était le 19 octobre 2022. Je suis parti de la région de…
+<a href="./posts/2022-10-19/2022-10-19.html" class="no-external">C’était le 19 octobre 2022. Je suis parti de la région de Valerette à 16:36:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:15:00. J’ai…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-10-19/2022-10-19.html">
+<a href="./posts/2022-10-19/2022-10-19.html" class="no-external">
 <div class="listing-date">
 19/10/2022
 </div>
@@ -783,32 +1148,30 @@ Nicolas Bressoud
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="hook5p" data-listing-date-sort="1666044000000" data-listing-file-modified-sort="1691936436000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="28" data-categories="aG9vazVw" data-listing-date-sort="1666044000000" data-listing-file-modified-sort="1705174470487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="162">
 <div class="thumbnail">
-<p><a href="./posts/2022-10-18/2022-10-18.html"> <img src="./posts/2022-10-18/image.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./posts/2022-10-18/2022-10-18.html" class="no-external"></a></p><a href="./posts/2022-10-18/2022-10-18.html" class="no-external">
+<p><img loading="lazy" data-src="./posts/2022-10-18/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/2022-10-18/2022-10-18.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./posts/2022-10-18/2022-10-18.html">
 <h3 class="no-anchor listing-title">
-Mon premier vol de 2022 !!
+<a href="./posts/2022-10-18/2022-10-18.html" class="no-external">Mon premier vol de 2022 !!</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./posts/2022-10-18/2022-10-18.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('hook5p'); return false;">
+<div class="listing-category" onclick="window.quartoListingCategory('aG9vazVw'); return false;">
 hook5p
 </div>
 </div>
-<a href="./posts/2022-10-18/2022-10-18.html">
 <div class="listing-description">
-C’était le 18 octobre 2022. Je suis parti de la région…
+<a href="./posts/2022-10-18/2022-10-18.html" class="no-external">C’était le 18 octobre 2022. Je suis parti de la région de Valerette à 17:40:00 et j’ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:14:00. J’ai…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./posts/2022-10-18/2022-10-18.html">
+<a href="./posts/2022-10-18/2022-10-18.html" class="no-external">
 <div class="listing-date">
 18/10/2022
 </div>
@@ -822,6 +1185,9 @@ Nicolas Bressoud
 <div class="listing-no-matching d-none">
 Aucun article correspondant
 </div>
+<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -858,18 +1224,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -901,11 +1256,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/parapente\.nicolasbressoud\.ch");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -915,8 +1307,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -928,7 +1329,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -972,6 +1495,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -997,6 +1521,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1057,6 +1607,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

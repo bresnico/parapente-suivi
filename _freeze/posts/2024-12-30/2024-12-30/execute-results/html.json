@@ -1,0 +1,15 @@
+{
+  "hash": "5062b8f80b9304d687d9925c2b49ac44",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Joli vol depuis la Foilleuse avec Emmanuel\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2024-12-30\"\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n\n## Infos sur la journée\n\n\n\n::: {.cell}\n\n:::\n\n\n\nC'était le 30 December 2024. On est partis de la région de NA à 11:56:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:18:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\nIl y avait Emmanuel, tout réalisé en transports en commun depuis les Ilettes, top !! On a tout bouclé entre 9h30 et 13h00.\n\n## Images de la journée\n\n\n\n\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n::: {.panel-tabset}\n\n### Image\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-12-30.jpeg)\n:::\n:::\n\n\n\n### Animation\n\nhttps://www.livetrack24.com/track/2741206/view3d\n\n\n\n```{=html}\n<iframe \n    src=\"https://www.livetrack24.com/track/2741206/view3d\" \n    width=\"100%\" \n    height=\"600\" \n    frameborder=\"0\" \n    allowfullscreen>\n</iframe>\n```\n\n\n\n:::\n\n## Hike and Fly\n\n\n\n::: {.cell}\n\n:::\n\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "f1ce4fcccc3c77de5d2d9f2acf87aee5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"La Foilleuse !\"\nauthor: \"Nicolas Bressoud\"\ndate: 2024-01-28\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 28 January 2024. Je suis parti de la région de La Foilleuse à 13:46:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:16:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\n## Images de la journée\n\n\n![](../../img/2024-01-28/IMG_4802.jpeg)\n<br/><br/>![](../../img/2024-01-28/IMG_4806.jpeg)\n<br/><br/>![](../../img/2024-01-28/IMG_4809.jpeg)\n<br/><br/>![](../../img/2024-01-28/IMG_4810.jpeg)\n<br/><br/>\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-01-28.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "edf504965bebfc9692dd9318c07a5645",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Atterrissage avec un bon vent de face\"\nauthor: \"Nicolas Bressoud\"\ndate: 2024-04-14\nvols: \"1\"\nemotion: \"calme\"\nintense: \"pas mal\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 14 April 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:04:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:10:00. J'ai volé 1 fois dans la journée. J'ai ressenti pas mal de calme.\n\nJ'ai de nouveau décollé face à la voile en lâchant les freins ! Manque de concentration à la préparation !\n\nAtterrissage avec fort vent de face. Je dois mieux préparer la phase finale face au vent.\n\n## Images de la journée\n\n\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-04-14.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

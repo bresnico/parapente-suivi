@@ -1,0 +1,15 @@
+{
+  "hash": "a3bbd53230fbd20db48aaa98ae0ccf6c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Foilleuse encore !\"\nauthor: \"Nicolas Bressoud\"\ndate: 2024-02-04\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 04 February 2024. Je suis parti de la région de la Foilleuse à 14:15:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:17:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\n## Images de la journée\n\n\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-02-04.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

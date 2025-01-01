@@ -1,5 +1,5 @@
 ---
-title: "ENfin !"
+title: "Enfin !"
 author: "Nicolas Bressoud"
 date: "2024-01-13"
 vols: "1"

@@ -1,0 +1,15 @@
+{
+  "hash": "00873628668c5f0b48465ab8a55aa01d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Premier vol en responsabilité pour Emmanuel !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2024-10-31\"\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"bien\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n\n## Infos sur la journée\n\n\n\n::: {.cell}\n\n:::\n\n\n\nC'était le 31 October 2024. Je suis parti de la région des Cerniers à 10:39:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:12:00. J'ai volé 1 fois dans la journée. J'ai ressenti bien du plaisir.\n\nC'était le premier Voland en responsabilité d'Emmanuel qui réalise bientôt son brevet.\n\nOn avait une météo très calme avec un petit vent travers droite depuis Chindonne. C'était assez étonnant parce que le vent de vallée commençait à s'installer. On a d'ailleurs posé face à la montagne (Choëx).\n\nMais, en terme de sécurité, tout était tip, top. Aucun souci.\n\n\n## Images de la journée\n\n\n\n![](../../img/2024-10-31/emmanuel_premier_vol_solo - 12.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 14.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 2.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 3.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 4.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 5.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 6.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 7.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 8.jpeg)\n<br/><br/>![](../../img/2024-10-31/emmanuel_premier_vol_solo - 9.jpeg)\n<br/><br/>\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-10-31.jpeg)\n:::\n:::\n\n\n\n## Hike and Fly\n\n\n\n::: {.cell}\n\n:::\n\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

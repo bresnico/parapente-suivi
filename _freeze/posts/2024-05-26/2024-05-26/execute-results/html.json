@@ -1,0 +1,15 @@
+{
+  "hash": "ac39c296e63b84d2e7efef342cdc5999",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Petit vol avant le renforcement du sud ouest\"\nauthor: \"Nicolas Bressoud\"\ndate: 2024-05-26\nvols: \"1\"\nemotion: \"joie\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 26 May 2024. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:18:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:11:00. J'ai volé 1 fois dans la journée. J'ai ressenti de la joie.\n\nIl y avait Jean-Da et Sam. Sam est redesendu à pieds.\n\n## Images de la journée\n\n\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-05-26.jpeg)\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

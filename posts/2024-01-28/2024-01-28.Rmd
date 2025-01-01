@@ -1,0 +1,104 @@
+---
+title: "La Foilleuse !"
+author: "Nicolas Bressoud"
+date: 2024-01-28
+vols: "1"
+emotion: "plaisir"
+intense: "bien"
+hike: FALSE
+supplement: FALSE
+walk: ""
+categories: [hook5p]
+image: 'image.jpg'
+---
+
+```{r}
+#| echo: false
+#| warning: false
+  
+library(here)
+library(tidyverse)
+library(rmarkdown)
+
+date_vol <- metadata$date
+n_vols <- metadata$vols
+```
+
+## Infos sur la journée
+
+```{r}
+#| echo: false
+#| warning: false
+
+d <- readRDS(here("data","data.rds"))
+
+# d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
+
+# d$date_vol <- as.Date(d$date_vol)
+
+# Formatez les dates avec strftime()
+# d$date_vol <- strftime(d$date_vol, "%e %B %Y")
+
+# Restaurez la locale précédente
+# Sys.setlocale("LC_TIME", old_locale)
+
+# Enlever l'éventuel espace au début
+# d$date_vol <- trimws(d$date_vol, which = "left")
+
+d_post <- d |> 
+  filter(Date == date_vol) |> 
+  select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+
+```
+
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de La Foilleuse à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti `r rmarkdown::metadata$intense` du `r rmarkdown::metadata$emotion`.
+
+## Images de la journée
+
+```{r echo=FALSE}
+#| echo: false
+#| warning: false
+#| results: asis 
+
+if (dir.exists(here("img", date_vol))) {
+  fichiers <- list.files(here("img", date_vol), full.names = FALSE)
+  for (i in seq_along(fichiers)) {
+    cat("![](","../../img/", date_vol, "/", fichiers[i], ")\n","<br/><br/>", sep="")
+  }
+}
+
+```
+
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+```
+
+## Hike and Fly
+
+```{r}
+#| echo: false
+#| warning: false
+
+if (metadata$hike == TRUE) {
+  walk <- metadata$walk
+  hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ ", walk, ".")
+  pic <- knitr::include_graphics(path= here("img", paste0(date_vol,"_walk",".jpeg")))
+
+} else {
+  hike <- "je n'ai pas fait de hike'n fly."
+  pic <- ""
+  pic2 <- ""
+}
+
+```
+
+`r hike`
+
+`r pic`
+

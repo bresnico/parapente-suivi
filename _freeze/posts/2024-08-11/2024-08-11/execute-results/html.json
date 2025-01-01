@@ -1,0 +1,15 @@
+{
+  "hash": "35e17fbd48aaffef356de41441fe20dc",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Petit vol après repas en famille à Chindonne\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2024-08-11\"\nvols: \"1\"\nemotion: \"satisfaction\"\nintense: \"pas mal\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n::: {.cell}\n\n:::\n\n\n\n## Infos sur la journée\n\n\n\n::: {.cell}\n\n:::\n\n\n\nC'était le 11 August 2024. Je suis parti de la région de Valerette à 13:02:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:14:00. J'ai volé 1 fois dans la journée. J'ai ressenti pas mal de satisfaction.\n\nC'était après un repas de famille à Chindonne et papa est venu me chercher à l'atterrissage. Temps caniculaire.\n\n## Images de la journée\n\n\n\n\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2024-08-11.jpeg)\n:::\n:::\n\n\n\n## Hike and Fly\n\n\n\n::: {.cell}\n\n:::\n\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
