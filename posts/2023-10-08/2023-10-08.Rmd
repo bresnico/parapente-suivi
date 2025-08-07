@@ -54,7 +54,7 @@ C'était le {{< meta date >}}. Je suis parti de la région de `r d_post[3]` à `
 Manu et les enfants étaient en plaine avec Laure et les filles. Sam et Jean-Da étaient en l'air. Top !
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

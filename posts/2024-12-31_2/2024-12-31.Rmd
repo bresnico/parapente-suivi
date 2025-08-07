@@ -59,7 +59,7 @@ Il y avait Jean-Da et Sam. Montée en bus, marche jusqu'à Fracette.
 
 ### Images
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 
@@ -89,7 +89,7 @@ Voici un tracé sélectionné de la journée :
 #| echo: false
 #| warning: false
 
-knitr::include_graphics(path = here("img", paste0(date_vol,"_2.jpeg")))
+knitr::include_graphics(path = here("img", paste0(date_vol,"_2.jpg")))
 ```
 
 ## Hike and Fly

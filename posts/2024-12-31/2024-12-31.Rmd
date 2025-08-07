@@ -20,7 +20,8 @@ library(here)
 library(tidyverse)
 library(rmarkdown)
 
-date_vol <- metadata$date
+# date_vol <- metadata$date
+date_vol <- "2024-12-31"
 n_vols <- metadata$vols
 ```
 
@@ -57,7 +58,7 @@ Il y avait Jean-Da et Sam. Très sympa.
 
 
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 
@@ -82,7 +83,7 @@ Voici un tracé sélectionné de la journée :
 #| echo: false
 #| warning: false
 
-knitr::include_graphics(path = here("img", paste0(date_vol,".jpg")))
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
 ```
 
 ## Hike and Fly

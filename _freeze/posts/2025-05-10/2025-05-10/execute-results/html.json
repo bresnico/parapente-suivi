@@ -1,0 +1,15 @@
+{
+  "hash": "d0d24b25b8e34134ea38bc069d2c4d51",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Nouveau déco !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-05-10\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 10 May 2025. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:11:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:15:00. J'ai volé 1 fois dans la journée avec Manu et Jean-Da.\n\nSuper déco, gros kiff.\n\nPetite volte pas très propre (je dois faire ma phase vent arrière sans fioritures) qui m'a valu une remarque d'un instructeur. Mais ça va.\n\n## Images de la journée\n\n![](../../img/2025-05-10/vol-mai-2025 - 1.jpeg)\n<br/><br/>![](../../img/2025-05-10/vol-mai-2025 - 2.jpeg)\n<br/><br/>![](../../img/2025-05-10/vol-mai-2025 - 3.jpeg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-05-10.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

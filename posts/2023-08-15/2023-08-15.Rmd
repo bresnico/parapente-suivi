@@ -58,7 +58,7 @@ Atterrissage bien réussi pour ma part. Tout bien.
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

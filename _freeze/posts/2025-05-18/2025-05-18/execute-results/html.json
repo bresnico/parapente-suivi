@@ -1,0 +1,15 @@
+{
+  "hash": "ad0149bfab9fc5cc96848fa603d77d3a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Solo pas solo\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-05-18\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 18 May 2025. Je suis parti de la région de Les Giettes à 09:37:00 et j'ai atterri dans la région de Monthey pour un durée de vol de 00:13:00. J'ai volé 1 fois dans la journée.\n\nJ'avais prévu un petit vol rapide du dimanche :\n\n- Vérossaz - Les Ilettes en vélo électrique\n- Vieux Pont - Les Cerniers en TPC\n- Les Cerniers - Les Ilettes en parapente\n- Les Ilettes - Chenarlier en vélo électrique.\n\nIl y avait du monde :\n\n- on était 3 à prendre le bus\n- il y a avait une école qui volait depuis Chindonne.\n\nMais tout a bien été. Ambiance calme, détendue, sympa.\n\n## Images de la journée\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-05-18.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

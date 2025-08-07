@@ -1,0 +1,15 @@
+{
+  "hash": "be1d6226851b747f1428d51985c48ed8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Petit vol rapide et efficace\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-05-15\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 15 May 2025. Je suis parti de la région des Cerniers à 10:12:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:14:00. J'ai volé 1 fois dans la journée.\n\nC'était un petit vol très sympa avec Manu. \n\nVert de printemps, ciel magnifique, super vent au déco.\n\nOn a pris le bus TPC de 9h20 au Vieux Pont. J'étais à 11h00 de retour à Vérossaz puis boulot en plaine. Parfait.\n## Images de la journée\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-05-15.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

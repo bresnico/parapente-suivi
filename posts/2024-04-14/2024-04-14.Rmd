@@ -59,7 +59,7 @@ Atterrissage avec fort vent de face. Je dois mieux préparer la phase finale fac
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

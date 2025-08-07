@@ -1,0 +1,133 @@
+---
+title: "Le jour des premières fois !"
+author: "Nicolas Bressoud"
+date: "2025-03-30"
+vols: "1"
+emotion: ""
+intense: ""
+hike: TRUE
+supplement: FALSE
+walk: "1h15"
+categories: [hook5p]
+image: 'image.jpg'
+---
+
+```{r}
+#| echo: false
+#| warning: false
+  
+library(here)
+library(tidyverse)
+library(rmarkdown)
+
+date_vol <- metadata$date
+n_vols <- metadata$vols
+```
+
+## Infos sur la journée
+
+```{r}
+#| echo: false
+#| warning: false
+
+d <- readRDS(here("data","data.rds"))
+
+# d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
+
+# d$date_vol <- as.Date(d$date_vol)
+
+# Formatez les dates avec strftime()
+# d$date_vol <- strftime(d$date_vol, "%e %B %Y")
+
+# Restaurez la locale précédente
+# Sys.setlocale("LC_TIME", old_locale)
+
+# Enlever l'éventuel espace au début
+# d$date_vol <- trimws(d$date_vol, which = "left")
+
+d_post <- d |> 
+  filter(Date == date_vol) |> 
+  select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+
+```
+
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de La Biolle (vers le chalet à Bernard et Mireille) à `r d_post[2]` et j'ai atterri dans la région des Haussex (à côté de chez Monique et Yvan) pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée. J'ai ressenti une grande satisfaction.
+
+Décollage : 46°12'18.5"N 6°57'55.0"E
+
+Atterrissage : 46°12'43.4"N 6°59'06.7"E
+
+Cette journée a été marquée par plusieurs premières expériences mémorables en parapente avec Manu et sur son initiative.
+
+Mon premier décollage s'est déroulé à la Biolle, près du chalet de Mireille et Bernard. Les conditions étaient idéales : face à la voile, avec une bonne brise de pente, rendant le décollage particulièrement facile. C'était ma première expérience sur ce site en 2025, et nous avons pu profiter de beaux thermiques, à la fois bien alimentés et calmes, ce qui nous a permis de nous amuser en vol.
+
+Pour la première fois également, j'ai tenté un atterrissage au cœur du village. Malgré un repérage précis et une bonne gestion de la sécurité, l'atterrissage a été un peu délicat en raison des petites bulles thermiques au-dessus du village et du peu de surface disponible. J'ai finalement posé dans le petit talus, légèrement en dessous de mon objectif initial.
+
+Le timing était parfait car ce dimanche, le four banal était en activité, ce qui nous a valu des commentaires très sympas de villageois qui nous ont observés.
+
+Mireille a pris la photo de Manu et moi en vol.
+
+Bilan d'apprentissage :
+
+Cette expérience m'a permis de gagner en confiance sur des sites inconnus, tant au décollage qu'à l'atterrissage. J'ai particulièrement apprécié le travail dans les petits thermiques.
+
+Bien que satisfait d'avoir réussi à atterrir dans la zone analysée, je reconnais que ce site d'atterrissage, techniquement exigeant, ne devrait pas être considéré comme notre option principale.
+
+Dans l'ensemble, cette sortie a été très satisfaisante. 
+
+Note technique pour l'atterrissage : une destruction au-dessus de l'école main droite, phase vent arrière direction sud, suivie d'une base au-dessus du petit chalet et d'une finale direction Nord constitue une approche appropriée.
+
+## Images de la journée
+
+```{r}
+#| echo: false
+#| warning: false
+#| results: asis 
+
+if (dir.exists(here("img", date_vol))) {
+  fichiers <- list.files(here("img", date_vol), full.names = FALSE)
+  for (i in seq_along(fichiers)) {
+    cat("![](","../../img/", date_vol, "/", fichiers[i], ")\n","<br/><br/>", sep="")
+  }
+}
+
+```
+
+## Petite vidéo
+
+{{< video https://youtu.be/J7Bx-fW3MyQ >}}
+
+## Et enfin...
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+
+knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
+```
+
+## Hike and Fly
+
+```{r}
+#| echo: false
+#| warning: false
+
+if (metadata$hike == TRUE) {
+  walk <- metadata$walk
+  hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ ", walk, ".")
+  pic <- knitr::include_graphics(path= here("img", paste0(date_vol,"_walk",".jpeg")))
+
+} else {
+  hike <- "je n'ai pas fait de hike'n fly."
+  pic <- ""
+  pic2 <- ""
+}
+
+```
+
+`r hike`
+
+`r pic`
+

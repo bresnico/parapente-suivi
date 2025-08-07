@@ -1,0 +1,15 @@
+{
+  "hash": "fa93da69f496fe3f81215908b957f0eb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"zéro moteur\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-06-14\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: TRUE\nsupplement: FALSE\nwalk: \"3h30\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 14 June 2025. Je suis parti de la région de Les Giettes à 09:19:00 et j'ai atterri dans la région de Monthey pour un durée de vol de 00:14:00. J'ai volé 1 fois dans la journée.\n\nC'était vraiment super de partir de la maison et aller jusqu'à Chindonne. On voulait a priori atterrir au village, mais une bonne analyse météo nous a indiqué qu'il fallait poser aux Ilettes. Et c'était le bon choix. Il y avait trop de vent juste après Massongex.\n\nEnsuite, on avait le jus pour remonter à la maison avec Manu. Le tout à pied. 100 % sans moteur. \n\nLe périple a commencé à 7h du matin et à 11h30, c'était bouclé. \n\nIl faut noter que la météo était plutôt lourde, mais on a eu beaucoup de chance avec des nuages qui nous ont bien protégé de la chaleur. Un petit café à Chindonne aurait fait plaisir, mais c'était privatisé.\n\nDe leur côté, Sam et Jean-Da ont fait également un vol du matin, mais aux Diablerets.\n\n## Images de la journée\n\n![](../../img/2025-06-14/PHOTO-2025-06-14-13-05-15 2.jpg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-06-14.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ 3h30.\n\n::: {.cell-output-display}\n![](../../img/2025-06-14_walk.jpeg){width=1200}\n:::\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

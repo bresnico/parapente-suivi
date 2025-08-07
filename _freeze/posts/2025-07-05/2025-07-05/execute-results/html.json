@@ -1,0 +1,15 @@
+{
+  "hash": "2a7a00d9ce3091b4920b704c66eca107",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Café à Chindonne\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-07-05\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 05 July 2025. Je suis parti de la région de Les Giettes à 10:43:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:20:00. J'ai volé 1 fois dans la journée.\n\nSuper vol avec Manu, précédé d'un café à Chindonne. On a fait Les Cerniers - Chindonne à pied.\n\n## Images de la journée\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-07-05.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

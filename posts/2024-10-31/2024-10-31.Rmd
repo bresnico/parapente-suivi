@@ -62,7 +62,7 @@ Mais, en terme de sécurité, tout était tip, top. Aucun souci.
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

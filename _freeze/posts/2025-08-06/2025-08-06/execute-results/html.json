@@ -1,0 +1,15 @@
+{
+  "hash": "4454e01a5b79a3091fd18d1697d13ade",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Marche, marche et vol\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-08-06\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: TRUE\nsupplement: TRUE\nwalk: \"1 heure\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 06 August 2025. Je suis parti de la région de Les Giettes à 19:00:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:15:00. J'ai volé 1 fois dans la journée avec Manu.\n\nLaure m'a amené aux Cerniers. On y a attendu Manu qui montait en bus. Laure nous a poussés à Chindonne. On a fait un AR Chindonne - Valerette pour décoller sous l'auberge. Il y avait des nuages et du vent à Valerette.\n\n## Images de la journée\n\n![](../../img/2025-08-06/vol-valerette-20250806 - 2.jpeg)\n<br/><br/>![](../../img/2025-08-06/vol-valerette-20250806 - 3.jpeg)\n<br/><br/>![](../../img/2025-08-06/vol-valerette-20250806 - 4.jpeg)\n<br/><br/>![](../../img/2025-08-06/vol-valerette-20250806 - 5.jpeg)\n<br/><br/>![](../../img/2025-08-06/vol-valerette-20250806 - 6.jpeg)\n<br/><br/>![](../../img/2025-08-06/vol-valerette-20250806 - 7.jpeg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-08-06.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ 1 heure.\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

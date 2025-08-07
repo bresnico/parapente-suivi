@@ -56,7 +56,7 @@ Lever à 5h45 et vélo pour rendez-vous aux Ilettes à 6h30. Après un café en 
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

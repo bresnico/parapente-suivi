@@ -59,7 +59,7 @@ knitr::include_graphics(path = here("img", paste0(date_vol,".jpeg")))
 
 Et quelques photos de vol prises par Sam (sauf celle de ma voile en vol) : 
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

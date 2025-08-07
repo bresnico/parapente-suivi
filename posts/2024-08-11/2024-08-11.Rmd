@@ -57,7 +57,7 @@ C'était après un repas de famille à Chindonne et papa est venu me chercher à
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

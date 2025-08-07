@@ -1,0 +1,15 @@
+{
+  "hash": "18b7a2eec901dec68663b644c8261a04",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"La Foilleuse en même temps que les écoles de Vérossaz\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-02-04\"\nvols: \"\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 04 February 2025. Je suis parti de la région de la Foilleuse (sur l'arête) à 10:44:00 et j'ai atterri dans la région de Monthey, Pont Rouge pour un durée de vol de 00:19:00.\n\nC'était un super vol sur l'initiative et l'organisation d'Emmanuel.\n\nJe n'ai pas vu Cécile, mais elle était aussi à Morgins pour la sortie de ski des écoles.\n\nPour la première fois, j'ai mis le natel au bras. C'était pas mal. À creuser.\n\n## Images de la journée\n\n\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-02-04.jpg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

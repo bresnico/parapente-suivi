@@ -57,7 +57,7 @@ Il y avait Emmanuel, tout réalisé en transports en commun depuis les Ilettes, 
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

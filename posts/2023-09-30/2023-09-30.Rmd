@@ -56,7 +56,7 @@ Mes parents et Cécile étaient sur place, avec Sam et Jean-Da, pour cela.
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

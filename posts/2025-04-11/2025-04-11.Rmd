@@ -1,0 +1,109 @@
+---
+title: "Sonchaux le soir !"
+author: "Nicolas Bressoud"
+date: "2025-04-11"
+vols: "1"
+emotion: ""
+intense: ""
+hike: TRUE
+supplement: TRUE
+walk: "1h00"
+categories: [hook5p]
+image: 'image.jpg'
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: setup
+  
+library(here)
+library(tidyverse)
+library(rmarkdown)
+
+date_vol <- metadata$date
+n_vols <- metadata$vols
+```
+
+## Infos sur la journée
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: data
+
+d <- readRDS(here("data","data.rds"))
+
+# d$date_vol <- str_extract(d$`Nom de fichier`, "\\d{4}-\\d{2}-\\d{2}")
+
+# d$date_vol <- as.Date(d$date_vol)
+
+# Formatez les dates avec strftime()
+# d$date_vol <- strftime(d$date_vol, "%e %B %Y")
+
+# Restaurez la locale précédente
+# Sys.setlocale("LC_TIME", old_locale)
+
+# Enlever l'éventuel espace au début
+# d$date_vol <- trimws(d$date_vol, which = "left")
+
+d_post <- d |> 
+  filter(Date == date_vol) |> 
+  select(Date,`Heure de décollage`, `Nomn de décollage`, `Nomn d'atterrissage`, `Durée`)
+
+```
+
+C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la région de `r d_post[3]` à `r d_post[2]` et j'ai atterri dans la région de `r d_post[4]` pour un durée de vol de `r d_post[5]`. J'ai volé `r rmarkdown::metadata$vols` fois dans la journée.
+
+Il y avait Sam et Manu. C'était vraiment agréable de terminer la semaine de travail de cette manière-là. Tout était calme et parfait.
+
+Je note tout de même un problème de ménage au décollage. La raison en est simple : j'ai fait le dernier pliage dans le stress.
+
+Mais tout était calme, magnifique.
+
+## Images de la journée
+
+```{r}
+#| echo: false
+#| warning: false
+#| results: asis 
+#| 
+
+if (dir.exists(here("img", date_vol))) {
+  fichiers <- list.files(here("img", date_vol), full.names = FALSE)
+  for (i in seq_along(fichiers)) {
+    cat("![](","../../img/", date_vol, "/", fichiers[i], ")\n","<br/><br/>", sep="")
+  }
+}
+
+```
+
+
+Voici un tracé sélectionné de la journée : 
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: trace
+
+knitr::include_graphics(path = here("img", paste0("2025-04-11",".jpg")))
+```
+
+## Hike and Fly
+
+```{r}
+#| echo: false
+#| warning: false
+#| label: hike
+
+  hike <- paste0("J'ai pu faire un peu de hike'n fly. J'ai marché environ 1h00", ".")
+  pic <- knitr::include_graphics(path= here("img", paste0("2025-04-11","_walk",".jpg")))
+
+
+
+```
+
+`r hike`
+
+`r pic`
+

@@ -56,7 +56,7 @@ On a voulu partir du col sous la dent de Jaman, les conditions étant optimales.
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

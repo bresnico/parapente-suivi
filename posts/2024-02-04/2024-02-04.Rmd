@@ -55,7 +55,7 @@ C'était le `r format(as.Date(date_vol), "%d %B %Y")`. Je suis parti de la régi
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 

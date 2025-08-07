@@ -1,0 +1,15 @@
+{
+  "hash": "b8b68db9a12375402ad344f0eb689af0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Sonchaux le soir !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-04-11\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: TRUE\nsupplement: TRUE\nwalk: \"1h00\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 11 April 2025. Je suis parti de la région de Sonchaux (Villeneuve) à 19:42:00 et j'ai atterri dans la région de Villeneuve pour un durée de vol de 00:13:00. J'ai volé 1 fois dans la journée.\n\nIl y avait Sam et Manu. C'était vraiment agréable de terminer la semaine de travail de cette manière-là. Tout était calme et parfait.\n\nJe note tout de même un problème de ménage au décollage. La raison en est simple : j'ai fait le dernier pliage dans le stress.\n\nMais tout était calme, magnifique.\n\n## Images de la journée\n\n![](../../img/2025-04-11/PHOTO-2025-04-11-20-21-15.jpg)\n<br/><br/>![](../../img/2025-04-11/PHOTO-2025-04-11-20-46-46 2.jpg)\n<br/><br/>![](../../img/2025-04-11/PHOTO-2025-04-11-20-46-46.jpg)\n<br/><br/>![](../../img/2025-04-11/PHOTO-2025-04-11-21-07-35.jpg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-04-11.jpg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nJ'ai pu faire un peu de hike'n fly. J'ai marché environ 1h00.\n\n::: {.cell-output-display}\n![](../../img/2025-04-11_walk.jpg){width=1200}\n:::\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

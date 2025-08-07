@@ -1,0 +1,15 @@
+{
+  "hash": "de30df1be61c13986488d6282d7dfdd4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Premiers thermiques sérieux de 2025\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-02-15\"\nvols: \"\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 15 February 2025. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:40:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:12:00. J'ai volé une fois dans la journée.\n\nC'est un chouette vol après une bonne marche. On avait un tout petit bus. Vraiment trop petit. La marche avec Manu et Jean-Daniel était très sympa très bon décollage avec un joli ventre de face.\n\nPas mal de monde en l'air qui partait depuis Togon virage. J'ai pas traîné en l'air, j'avais trop mal aux mains, mais ça tenait.\n\n## Images de la journée\n\n![](../../img/2025-02-15/para - 12.jpeg)\n<br/><br/>![](../../img/2025-02-15/para - 6.jpeg)\n<br/><br/>![](../../img/2025-02-15/para - 7.jpeg)\n<br/><br/>![](../../img/2025-02-15/para - 8.jpeg)\n<br/><br/>![](../../img/2025-02-15/para - 9.jpeg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-02-15.jpg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

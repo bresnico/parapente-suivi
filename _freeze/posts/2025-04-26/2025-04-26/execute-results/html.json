@@ -1,0 +1,15 @@
+{
+  "hash": "22866c45b440f694e0c1eee5b1262130",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Entre les nuages\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-04-26\"\nvols: \"1\"\nemotion: \"\"\nintense: \"\"\nhike: FALSE\nsupplement: TRUE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 26 April 2025. Je suis parti de la région de Vionnaz Frassette Lieu-dit Pro-de-Chaud à 10:53:00 et j'ai atterri dans la région de Mayen pour un durée de vol de 00:17:00. J'ai volé 1 fois dans la journée.\nIl y avait Jean-Da et Manu Très sympa.\n\nLes 2 familles nous ont rejoints à pieds et en train. On a bu l'apéro sur site, avec Gringo. On a pu faire un pique-nique aux Grangettes ensuite.\n\n## Images de la journée\n\n![](../../img/2025-04-26/vol-avril-2025 - 1.jpeg)\n<br/><br/>![](../../img/2025-04-26/vol-avril-2025 - 2.jpeg)\n<br/><br/>![](../../img/2025-04-26/vol-avril-2025 - 3.jpeg)\n<br/><br/>![](../../img/2025-04-26/vol-avril-2025 - 4.jpeg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-04-26.jpeg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

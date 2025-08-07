@@ -1,0 +1,15 @@
+{
+  "hash": "8d455246c41fe55d9844f4ddf42a39ec",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Leysin à nouveau pour commencer une année !\"\nauthor: \"Nicolas Bressoud\"\ndate: \"2025-01-17\"\nvols: \"1\"\nemotion: \"plaisir\"\nintense: \"beaucoup\"\nhike: FALSE\nsupplement: FALSE\nwalk: \"\"\ncategories: [hook5p]\nimage: 'image.jpg'\n---\n\n\n::: {.cell}\n\n:::\n\n\n## Infos sur la journée\n\n\n::: {.cell}\n\n:::\n\n\nC'était le 17 January 2025. Je suis parti de la région de Berneuse-2020 à 10:55:00 et j'ai atterri aux Glariers à Aigle pour un durée de vol de 00:19:00. J'ai volé 1 fois dans la journée. \n\nOn a fait un décollage face aux dents du Midi. Il y avait un léger vent de dos qui commençait à s'installer. J'ai décollé face à la voile avec trois parapentistes qui ont dû remettre mon bord d'attaque en place. J'ai décollé avec un léger nul sans stress. Ça a très bien été. L'atterrissage était correct également, mais j'ai été surpris par la vitesse de ma voile sur toute la volte.\n\nC'est Emmanuel qui a organisé ce super vol. On est montés en TP depuis Aigle. C'est vraiment un plaisir de prendre tranquillement le train et le télécabine sans pression du temps ou du monde.\n\nOn fait la boucle en 4 heures sans aucun pression du temps (rendez-vous 7h50 au pied du mont, retour à la voiture à 11h40 aux Glariers).\n\n## Images de la journée\n\n![](../../img/2025-01-17/berneuse - 1.jpeg)\n<br/><br/>![](../../img/2025-01-17/berneuse - 2.jpeg)\n<br/><br/>![](../../img/2025-01-17/berneuse - 3.jpeg)\n<br/><br/>![](../../img/2025-01-17/berneuse - 4.jpeg)\n<br/><br/>![](../../img/2025-01-17/berneuse - 5.jpeg)\n<br/><br/>![](../../img/2025-01-17/berneuse - 6.jpeg)\n<br/><br/>![](../../img/2025-01-17/berneuse - 7.jpeg)\n<br/><br/>\n\n\nVoici un tracé sélectionné de la journée : \n\n\n::: {.cell}\n::: {.cell-output-display}\n![](../../img/2025-01-17.jpg){width=600}\n:::\n:::\n\n\n## Hike and Fly\n\n\n::: {.cell}\n\n:::\n\n\nje n'ai pas fait de hike'n fly.\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -57,7 +57,7 @@ Il y avait Jean-Da et Sam. Très sympa.
 
 ## Images de la journée
 
-```{r echo=FALSE}
+```{r}
 #| echo: false
 #| warning: false
 #| results: asis 
